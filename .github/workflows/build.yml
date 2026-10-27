@@ -1,4 +1,4 @@
-name: Build scmod
+: Build scmod
 
 on:
   push:
