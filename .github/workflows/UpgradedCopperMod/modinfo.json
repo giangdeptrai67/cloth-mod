@@ -1,0 +1,14 @@
+{
+  "$schema": "https://gitee.com/SC-SPM/SurvivalcraftApi/raw/SCAPI1.9/Survivalcraft/Content/modinfo-scheme.json",
+  "Name": "Giang's cloth pack",
+  "Version": "1.0.0",
+  "ApiVersion": "1.9.3",
+  "Description": "Clothing expansion and an upgraded copper ingot.",
+  "ScVersion": "2.4.0.0",
+  "LoadOrder": 0,
+  "NonPersistentMod": false,
+  "GameplayImpactLevel": "Assist",
+  "Author": "Giang",
+  "PackageName": "Giang.scclothexpandsion",
+  "Dependencies": {}
+}
