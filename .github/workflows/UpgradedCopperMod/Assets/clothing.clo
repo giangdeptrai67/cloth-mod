@@ -1,0 +1,23 @@
+<Mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gitee.com/SC-SPM/SurvivalcraftApi/raw/SCAPI1.9/Survivalcraft/Content/Assets/Clothes.xsd">
+
+  <ClothingData
+    Class="Game.ClothingData"
+    Index="38"
+    DisplayName="upgraded wooden chestplate"
+    Description="An upgraded wooden armor, more durability, better protection, weight more "
+    Slot="Torso"
+    ArmorProtection="1.0"
+    Sturdiness="25"
+    Insulation="0.2"
+    MovementSpeedFactor="0.8"
+    SteedMovementSpeedFactor="0.8"
+    DensityModifier="0.0"
+    IsOuter="True"
+    CanBeDyed="False"
+    Layer="3"
+    PlayerLevelRequired="1"
+    TextureName="Textures/Clothing/upgradedwoodenchestplate"
+    ImpactSoundsFolder="" 
+   />
+
+</Mod>
