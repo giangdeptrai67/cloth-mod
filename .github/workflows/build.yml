@@ -1,0 +1,43 @@
+name: Build scmod
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Build
+        run: dotnet build UpgradedCopperMod/SurvivalcraftTemplateModForAPI.csproj -c Release
+
+      - name: Package scmod (modinfo.json at the root)
+        shell: python
+        run: |
+          import zipfile, pathlib, sys
+          root = pathlib.Path("UpgradedCopperMod")
+          dlls = list(root.glob("bin/Release/**/UpgradedCopperMod.dll"))
+          if not dlls:
+              sys.exit("UpgradedCopperMod.dll not found")
+          out = dlls[0].parent
+          with zipfile.ZipFile("UpgradedCopperMod.scmod", "w", zipfile.ZIP_DEFLATED) as z:
+              for p in sorted(out.rglob("*")):
+                  if p.is_file() and p.suffix != ".scmod":
+                      z.write(p, p.relative_to(out).as_posix())
+          names = zipfile.ZipFile("UpgradedCopperMod.scmod").namelist()
+          print("\n".join(names))
+          if "modinfo.json" not in names or "UpgradedCopperMod.dll" not in names:
+              sys.exit("modinfo.json or dll is not at the root of the scmod")
+
+      - name: Upload scmod
+        uses: actions/upload-artifact@v4
+        with:
+          name: UpgradedCopperMod
+          path: UpgradedCopperMod.scmod
+          if-no-files-found: error
