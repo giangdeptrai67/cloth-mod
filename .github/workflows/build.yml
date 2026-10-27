@@ -15,13 +15,13 @@ jobs:
           dotnet-version: 10.0.x
 
       - name: Build
-        run: dotnet build UpgradedCopperMod/SurvivalcraftTemplateModForAPI.csproj -c Release
+        run: dotnet build .github/workflows/UpgradedCopperMod/SurvivalcraftTemplateModForAPI.csproj -c Release
 
       - name: Package scmod (modinfo.json at the root)
         shell: python
         run: |
           import zipfile, pathlib, sys
-          root = pathlib.Path("UpgradedCopperMod")
+          root = pathlib.Path(".github/workflows/UpgradedCopperMod")
           dlls = list(root.glob("bin/Release/**/UpgradedCopperMod.dll"))
           if not dlls:
               sys.exit("UpgradedCopperMod.dll not found")
