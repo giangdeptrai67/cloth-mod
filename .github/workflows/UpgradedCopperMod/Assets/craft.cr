@@ -5,7 +5,7 @@
     "aba"
     " c"
   </Recipe>
-    <Recipe Result="UpgradedCopperIngotBlock" ResultCount="1" RequiredHeatLevel ="0' a="copper ingot" b="coalchunk" Description="upgrade copper ingot from copper and coal">
+    <Recipe Result="UpgradedCopperIngotBlock" ResultCount="1" RequiredHeatLevel ="0' a="copperingot" b="coalchunk" Description="upgrade copper ingot from copper and coal">
     "aba"
   </Recipe>
 </Mod>
