@@ -1,0 +1,8 @@
+{
+  "Blocks": {
+    "UpgradedCopperIngotBlock:0": {
+      "DisplayName": "Stronger items",
+      "Description": "Mod that add upgrade version of items."
+    }
+  }
+}
