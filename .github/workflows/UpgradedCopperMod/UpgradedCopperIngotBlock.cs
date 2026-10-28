@@ -17,7 +17,7 @@ namespace Game {
     public class UpgradedIronIngotBlock : IngotBlock {
         public Texture2D m_texture;
 
-        public UpgradedIronIngotBlock() : base("IronIngot") { }
+        public UpgradedIronIngotBlock() : base("CopperIngot") { }
 
         public override void Initialize() {
             base.Initialize();
