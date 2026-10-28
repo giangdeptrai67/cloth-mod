@@ -26,4 +26,13 @@
     "cbc"
     " a "
   </Recipe>
+<Recipe Result="ClothingBlock:42" ResultCount="1" RequiredHeatLevel="0" a="coalchunk" b="clothing:35" c="upgradedcopperingot" Description="upgrade copper legging from upgraded copper ingot and coal">
+    " c "
+    "cbc"
+    " a "
+  </Recipe>
+<Recipe Result="ClothingBlock:43" ResultCount="1" RequiredHeatLevel="0" a="coalchunk" b="clothing:35" c="upgradedcopperingot" Description="upgrade copper legging from upgraded copper ingot and coal">
+    " c "
+    "cbc"
+    " a "
 </Mod>
