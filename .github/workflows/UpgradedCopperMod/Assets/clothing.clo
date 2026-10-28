@@ -17,7 +17,7 @@
     Layer="5"
     PlayerLevelRequired="1"
     TextureName="Textures/Clothing/upgradedwoodenchestplate"
-    ImpactSoundsFolder="" 
+    ImpactSoundsFolder="Audio/Impacts/Wood" 
    />
 <ClothingData
     Class="Game.ClothingData"
@@ -36,7 +36,7 @@
     Layer="4"
     PlayerLevelRequired="1"
     TextureName="Textures/Clothing/upgradedwoodenlegging"
-    ImpactSoundsFolder="" 
+    ImpactSoundsFolder="Audio/Impacts/Wood" 
    />
 <ClothingData
     Class="Game.ClothingData"
@@ -55,7 +55,7 @@
     Layer="5"
     PlayerLevelRequired="1"
     TextureName="Textures/Clothing/upgradedcopperhelmet"
-    ImpactSoundsFolder="" 
+    ImpactSoundsFolder="Audio/Impacts/Metal" 
    />
 <ClothingData
     Class="Game.ClothingData"
@@ -74,6 +74,6 @@
     Layer="5"
     PlayerLevelRequired="1"
     TextureName="Textures/Clothing/upgradedcopperchestplate"
-    ImpactSoundsFolder="" 
+    ImpactSoundsFolder="Audio/Impacts/Metal" 
    />
 </Mod>
