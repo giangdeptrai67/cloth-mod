@@ -11,4 +11,9 @@
     <Recipe Result="UpgradedCopperIngotBlock" ResultCount="1" RequiredHeatLevel ="1" a="copperingot" b="coalchunk" Description="upgrade copper ingot from copper and coal">
     "ab"
   </Recipe>
+<Recipe Result="ClothingBlock:39" ResultCount="1" RequiredHeatLevel="0" a="planks" b="clothing:28" c="string" Description="upgrade wooden legging from planks and string">
+    ""
+    "aba"
+    " c"
+  </Recipe>
 </Mod>
