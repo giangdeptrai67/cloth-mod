@@ -15,7 +15,7 @@ jobs:
           dotnet-version: 10.0.x
 
       - name: Build
-        run: dotnet build .github/workflows/UpgradedCopperMod/SurvivalcraftTemplateModForAPI.csproj -c Release
+        run: dotnet build .github/workflows/UpgradedCopperMod/SurvivalcraftTemplateModForAPI.csproj -c Release --no-incremental
 
       - name: Package scmod (modinfo.json at the root)
         shell: python
@@ -26,10 +26,26 @@ jobs:
           if not dlls:
               sys.exit("UpgradedCopperMod.dll not found")
           out = dlls[0].parent
+          added = set()
+          data_ext = {".csv", ".lang", ".json", ".xml", ".png", ".txt"}
           with zipfile.ZipFile("UpgradedCopperMod.scmod", "w", zipfile.ZIP_DEFLATED) as z:
+              # 1) toàn bộ output build
               for p in sorted(out.rglob("*")):
                   if p.is_file() and p.suffix != ".scmod":
-                      z.write(p, p.relative_to(out).as_posix())
+                      arc = p.relative_to(out).as_posix()
+                      z.write(p, arc)
+                      added.add(arc)
+              # 2) file dữ liệu trong thư mục project (csv, lang...), bỏ bin/obj
+              for p in sorted(root.rglob("*")):
+                  if not p.is_file() or p.suffix.lower() not in data_ext:
+                      continue
+                  rel = p.relative_to(root)
+                  if rel.parts[0] in ("bin", "obj"):
+                      continue
+                  arc = rel.as_posix()
+                  if arc not in added:
+                      z.write(p, arc)
+                      added.add(arc)
           names = zipfile.ZipFile("UpgradedCopperMod.scmod").namelist()
           print("\n".join(names))
           if "modinfo.json" not in names or "UpgradedCopperMod.dll" not in names:
