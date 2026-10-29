@@ -41,8 +41,12 @@ namespace Game {
         public class ChunkOfIronAndDiamondBlock : ChunkBlock {
         public Texture2D m_texture;
 
-        public ChunkOfIronAndDiamondBlock() : base(Matrix.Identity, Matrix.Identity, Color.White, false) { }
-
+        public ChunkOfIronAndDiamondBlock() : base(
+    Matrix.CreateRotationX(1f) * Matrix.CreateRotationZ(2f),
+    Matrix.CreateScale(16f, 16f, 1f) * Matrix.CreateTranslation(0f, -15f, 0f),
+    Color.White,
+    false
+) { }
         public override void Initialize() {
             base.Initialize();
             m_texture = ContentManager.Get<Texture2D>("Textures/chunkofironanddiamond");
