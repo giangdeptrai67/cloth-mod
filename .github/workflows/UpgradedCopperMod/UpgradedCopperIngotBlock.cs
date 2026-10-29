@@ -61,7 +61,7 @@ namespace Game {
 
         public override void Initialize() {
             base.Initialize();
-            m_texture = ContentManager.Get<Texture2D>("Textures/chunkofironanddiamond");
+            m_texture = ContentManager.Get<Texture2D>("Textures/diaroniumingot");
         }
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
