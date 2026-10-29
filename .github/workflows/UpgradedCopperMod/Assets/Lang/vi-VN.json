@@ -1,0 +1,16 @@
+{
+  "Blocks": {
+    "UpgradedCopperIngotBlock:0": {
+      "DisplayName": "Thỏi đồng nâng cấp",
+      "Description": "Thỏi đồng đã được nâng cấp, cứng hơn và bền hơn thỏi đồng thường. Dùng để chế tạo quần áo và đồ vật cao cấp."
+    },
+    "UpgradedIronIngotBlock:0": {
+      "DisplayName": "Thỏi sắt nâng cấp",
+      "Description": "Thỏi sắt đã được nâng cấp, cứng hơn và bền hơn thỏi sắt thường. Dùng để chế tạo quần áo và đồ vật cao cấp."
+    },
+    "HalfUpgradedIronIngotBlock:0": {
+      "DisplayName": "Thỏi sắt nâng cấp một nửa",
+      "Description": "Thỏi sắt mới được nâng cấp một nửa. Chỉ dùng để chế tạo thỏi sắt nâng cấp."
+    }
+  }
+}
