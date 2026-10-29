@@ -38,4 +38,16 @@ namespace Game {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
     }
-}
+        public class ChunkOfIronAndDiamond : IngotBlock {
+        public Texture2D m_texture;
+
+        public ChunkOfIronAndDiamond() : base("CoalChunk") { }
+
+        public override void Initialize() {
+            base.Initialize();
+            m_texture = ContentManager.Get<Texture2D>("Textures/chunkofironanddiamond");
+        }
+
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
+        }
+    }
