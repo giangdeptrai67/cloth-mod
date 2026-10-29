@@ -14,9 +14,12 @@
       "DisplayName": "Half upgraded iron ingot",
       "Description": "half upgraded iron ingot, only use to make upgraded iron ingot"
   },
-    "ChunkOfIronAndDiamond:0": {
+    "ChunkOfIronAndDiamondBlock:0": {
       "DisplayName": "Chunk of iron and diamond",
       "Description": "chunk of iron and diamond, put it in a furnace and see what come out"
-  }
+  },
+    "DiaroniumIngotBlock:0": {
+      "DisplayName": "Diaronium ingot",
+      "Description": "Strongest ingot, upgraded version of diamond, double the power"
 }
 }
