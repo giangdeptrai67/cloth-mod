@@ -11,6 +11,13 @@
     "HalfUpgradedIronIngotBlock:0": {
       "DisplayName": "Thỏi sắt nâng cấp một nửa",
       "Description": "Thỏi sắt mới được nâng cấp một nửa. Chỉ dùng để chế tạo thỏi sắt nâng cấp."
-    }
+    },
+    "ChunkOfIronAndDiamondBlock:0": {
+      "DisplayName": "Khối bầy nhầy chứa sắt và kim cương"
+      "Description": "Một khối bầy nhầy chứa sắt và kim cương kết hợp với nhau, không biết nung nó lên sẽ thu được gì?"
+    },
+    "DiaroniumIngotBlock:0": {
+      "DisplayName": "Thỏi diaronium",
+      "Description": "Thỏi diaronium, kim loại sắt kết hợp với kim cương, khoẻ gấp đôi hoặc hơn kim cương thường"
   }
 }
