@@ -66,4 +66,17 @@ namespace Game {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
     }
+    public class HalfUpgradedDiaroniumIngotBlock : IngotBlock {
+        public Texture2D m_texture;
+
+        public HalfUpgradedDiaroniumIngotBlock() : base("CopperIngot") { }
+
+        public override void Initialize() {
+            base.Initialize();
+            m_texture = ContentManager.Get<Texture2D>("Textures/halfupgradeddiaroniumingot");
+        }
+
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
+    }
+    
     }
