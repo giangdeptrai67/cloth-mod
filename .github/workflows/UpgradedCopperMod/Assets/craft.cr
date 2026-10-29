@@ -77,5 +77,5 @@
 </Recipe>
 Recipe Result="DiaroniumIngotblock" ResultCount="1" RequiredHeatLevel="2" a="halfdiaronium" b="upgradedironingot" Description="make full diaronium ingot from half upgraded iron ingot and half upgraded diaronium">
     "aba"
-</Recipe>
+ </Recipe>
 </Mod>
