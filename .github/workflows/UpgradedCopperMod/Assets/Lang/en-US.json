@@ -2,12 +2,12 @@
   "Blocks": {
     "UpgradedCopperIngotBlock:0": {
       "DisplayName": "Upgraded copper ingot",
-      "Description": "an ungraded verison of copper ingot"
+      "Description": "an ungraded verison of copper ingot, use to make upgraded version of original copper items"
     },
   
   "UpgradedIronIngotBlock:0": {
       "DisplayName": "Upgraded iron ingot",
-      "Description": "an ungraded verison of iron ingot"
+      "Description": "an ungraded verison of iron ingot, use to make upgraded version of original iron items"
   },
 
     "HalfUpgradedIronIngotBlock:0": {
