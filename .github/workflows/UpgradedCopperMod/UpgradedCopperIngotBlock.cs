@@ -38,7 +38,7 @@ namespace Game {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
     }
-        public class ChunkOfIronAndDiamondBlock : IngotBlock {
+        public class ChunkOfIronAndDiamondBlock : ChunkBlock {
         public Texture2D m_texture;
 
         public ChunkOfIronAndDiamondBlock() : base("CoalChunk") { }
