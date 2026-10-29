@@ -50,7 +50,6 @@
 </Recipe>
     <Recipe Result="HalfUpgradedIronIngotBlock" ResultCount="1" RequiredHeatLevel ="2" a="ironingot" b="copperingot" Description="make half upgraded iron ingot from iron and copper ingot">
     "ab"
-  </Recipe>
 </Recipe>
     <Recipe Result="UpgradedIronIngotBlock" ResultCount="1" RequiredHeatLevel ="2" a="halfupgradedironingot" Description="make upgraded iron ingot from 2 half upgraded iron ingot">
     "aa"
