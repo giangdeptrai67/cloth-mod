@@ -19,5 +19,9 @@
     "DiaroniumIngotBlock:0": {
       "DisplayName": "Thỏi diaronium",
       "Description": "Thỏi diaronium, kim loại sắt kết hợp với kim cương, khoẻ gấp đôi hoặc hơn kim cương thường"
+      ,
+    "DiaroniumIngotBlock:0": {
+      "DisplayName": "Thỏi diaronium một nửa",
+      "Description": "Thỏi diaronium, kim loại sắt kết hợp với kim cương, nhưng mới chỉ là một nửa, kết hợp để được thỏi diaronium đầy đủ"
   }
 }
