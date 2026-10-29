@@ -112,7 +112,8 @@
     Layer="5"
     PlayerLevelRequired="2"
     TextureName="Textures/Clothing/upgradedcopperboots"
-    ImpactSoundsFolder="Audio/Impacts/Metal" 
+    ImpactSoundsFolder="Audio/Impacts/Metal"
+   />
 <ClothingData
     Class="Game.ClothingData"
     Index="44"
