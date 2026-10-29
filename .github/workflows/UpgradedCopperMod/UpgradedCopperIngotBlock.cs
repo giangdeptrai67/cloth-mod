@@ -54,4 +54,16 @@ namespace Game {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
         }
+    public class DiaroniumIngotBlock : IngotBlock {
+        public Texture2D m_texture;
+
+        public DiaroniumIngotBlock() : base("CopperIngot") { }
+
+        public override void Initialize() {
+            base.Initialize();
+            m_texture = ContentManager.Get<Texture2D>("Textures/chunkofironanddiamond");
+        }
+
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
+    }
     }
