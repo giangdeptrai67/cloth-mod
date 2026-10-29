@@ -41,7 +41,7 @@ namespace Game {
         public class ChunkOfIronAndDiamondBlock : IngotBlock {
         public Texture2D m_texture;
 
-        public ChunkOfIronAndDiamond() : base("CoalChunk") { }
+        public ChunkOfIronAndDiamondBlock() : base("CoalChunk") { }
 
         public override void Initialize() {
             base.Initialize();
