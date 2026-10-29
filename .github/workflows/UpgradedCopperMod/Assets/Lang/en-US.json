@@ -20,6 +20,11 @@
   },
     "DiaroniumIngotBlock:0": {
       "DisplayName": "Diaronium ingot",
-      "Description": "Strongest ingot, upgraded version of diamond, double the power"
+      "Description": "Strongest ingot, upgraded version of diamond, double the power of diamonds."
+},
+    "HalfUpgradedDiaroniumIngotBlock:0": {
+      "DisplayName": "Half upgraded diaronium ingot",
+      "Description": "Strongest ingot, upgraded version of diamond,can only be used in making full diaronium ingot. "
 }
+  }
 }
