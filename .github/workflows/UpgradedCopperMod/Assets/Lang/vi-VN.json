@@ -1,27 +1,64 @@
 {
-  "Blocks": {
-    "UpgradedCopperIngotBlock:0": {
-      "DisplayName": "Thỏi đồng nâng cấp",
-      "Description": "Thỏi đồng đã được nâng cấp, cứng hơn và bền hơn thỏi đồng thường. Dùng để chế tạo quần áo và đồ vật cao cấp."
-    },
-    "UpgradedIronIngotBlock:0": {
-      "DisplayName": "Thỏi sắt nâng cấp",
-      "Description": "Thỏi sắt đã được nâng cấp, cứng hơn và bền hơn thỏi sắt thường. Dùng để chế tạo quần áo và đồ vật cao cấp."
-    },
-    "HalfUpgradedIronIngotBlock:0": {
-      "DisplayName": "Thỏi sắt nâng cấp một nửa",
-      "Description": "Thỏi sắt mới được nâng cấp một nửa. Chỉ dùng để chế tạo thỏi sắt nâng cấp."
-    },
-    "ChunkOfIronAndDiamondBlock:0": {
-      "DisplayName": "Khối bầy nhầy chứa sắt và kim cương"
-      "Description": "Một khối bầy nhầy chứa sắt và kim cương kết hợp với nhau, không biết nung nó lên sẽ thu được gì?"
-    },
-    "DiaroniumIngotBlock:0": {
-      "DisplayName": "Thỏi diaronium",
-      "Description": "Thỏi diaronium, kim loại sắt kết hợp với kim cương, khoẻ gấp đôi hoặc hơn kim cương thường"
-      ,
-    "DiaroniumIngotBlock:0": {
-      "DisplayName": "Thỏi diaronium một nửa",
-      "Description": "Thỏi diaronium, kim loại sắt kết hợp với kim cương, nhưng mới chỉ là một nửa, kết hợp để được thỏi diaronium đầy đủ"
-  }
+  "DisplayName:UpgradedCopperIngotBlock:0": "Thỏi đồng nâng cấp",
+  "Description:UpgradedCopperIngotBlock:0": "Thỏi đồng đã được nâng cấp, cứng và bền hơn đồng thường. Dùng để chế tạo trang bị nâng cấp.",
+  "DisplayName:UpgradedIronIngotBlock:0": "Thỏi sắt nâng cấp",
+  "Description:UpgradedIronIngotBlock:0": "Thỏi sắt đã được nâng cấp, cứng và bền hơn sắt thường. Dùng để chế tạo trang bị nâng cấp.",
+  "DisplayName:HalfUpgradedIronIngotBlock:0": "Thỏi sắt nâng cấp một nửa",
+  "Description:HalfUpgradedIronIngotBlock:0": "Thỏi sắt mới được nâng cấp một nửa. Dùng để chế tạo thỏi sắt nâng cấp hoàn chỉnh.",
+  "DisplayName:ChunkOfIronAndDiamondBlock:0": "Khối sắt và kim cương",
+  "Description:ChunkOfIronAndDiamondBlock:0": "Khối kết hợp giữa sắt và kim cương. Hãy nung thử để xem bạn nhận được gì.",
+  "DisplayName:DiaroniumIngotBlock:0": "Thỏi Diaronium",
+  "Description:DiaroniumIngotBlock:0": "Hợp kim mạnh mẽ được nâng cấp từ kim cương, có sức mạnh gấp đôi kim cương thường.",
+  "DisplayName:HalfUpgradedDiaroniumIngotBlock:0": "Thỏi Diaronium bán thành phẩm",
+  "Description:HalfUpgradedDiaroniumIngotBlock:0": "Thỏi Diaronium mới được nâng cấp một nửa. Dùng để chế tạo thỏi Diaronium hoàn chỉnh.",
+  "DisplayName:ClothingBlock:38": "Áo giáp ngực gỗ nâng cấp",
+  "Description:ClothingBlock:38": "Phiên bản nâng cấp của áo giáp ngực gỗ, bền hơn và bảo vệ tốt hơn nhưng nặng hơn.",
+  "DisplayName:ClothingBlock:39": "Quần giáp gỗ nâng cấp",
+  "Description:ClothingBlock:39": "Phiên bản nâng cấp của quần giáp gỗ, bền hơn và bảo vệ tốt hơn nhưng nặng hơn.",
+  "DisplayName:ClothingBlock:40": "Mũ giáp đồng nâng cấp",
+  "Description:ClothingBlock:40": "Phiên bản nâng cấp của mũ giáp đồng, bền hơn và bảo vệ tốt hơn nhưng nặng hơn.",
+  "DisplayName:ClothingBlock:41": "Áo giáp ngực đồng nâng cấp",
+  "Description:ClothingBlock:41": "Phiên bản nâng cấp của áo giáp ngực đồng, bền hơn và bảo vệ tốt hơn nhưng nặng hơn.",
+  "DisplayName:ClothingBlock:42": "Quần giáp đồng nâng cấp",
+  "Description:ClothingBlock:42": "Phiên bản nâng cấp của quần giáp đồng, bền hơn và bảo vệ tốt hơn nhưng nặng hơn.",
+  "DisplayName:ClothingBlock:43": "Ủng đồng nâng cấp",
+  "Description:ClothingBlock:43": "Phiên bản nâng cấp của ủng đồng, bền hơn và bảo vệ tốt hơn nhưng nặng hơn.",
+  "DisplayName:ClothingBlock:44": "Mũ giáp sắt nâng cấp",
+  "Description:ClothingBlock:44": "Phiên bản nâng cấp của mũ giáp sắt, bền hơn và bảo vệ tốt hơn nhưng nặng hơn.",
+  "DisplayName:ClothingBlock:45": "Áo giáp ngực sắt nâng cấp",
+  "Description:ClothingBlock:45": "Phiên bản nâng cấp của áo giáp ngực sắt, bền hơn và bảo vệ tốt hơn nhưng nặng hơn.",
+  "DisplayName:ClothingBlock:46": "Quần giáp sắt nâng cấp",
+  "Description:ClothingBlock:46": "Phiên bản nâng cấp của quần giáp sắt, bền hơn và bảo vệ tốt hơn nhưng nặng hơn.",
+  "DisplayName:ClothingBlock:47": "Ủng sắt nâng cấp",
+  "Description:ClothingBlock:47": "Phiên bản nâng cấp của ủng sắt, bền hơn và bảo vệ tốt hơn nhưng nặng hơn.",
+  "DisplayName:ClothingBlock:48": "Mũ giáp Diaronium",
+  "Description:ClothingBlock:48": "Mũ giáp kim cương được nâng cấp bằng Diaronium. Có độ bền cực cao, khả năng bảo vệ vượt trội và tăng tốc độ di chuyển.",
+  "DisplayName:ClothingBlock:49": "Áo giáp ngực Diaronium",
+  "Description:ClothingBlock:49": "Áo giáp ngực kim cương được nâng cấp bằng Diaronium. Có độ bền cực cao, khả năng bảo vệ vượt trội và tăng tốc độ di chuyển.",
+  "DisplayName:ClothingBlock:50": "Quần giáp Diaronium",
+  "Description:ClothingBlock:50": "Quần giáp kim cương được nâng cấp bằng Diaronium. Có độ bền cực cao, khả năng bảo vệ vượt trội và tăng tốc độ di chuyển.",
+  "DisplayName:ClothingBlock:51": "Ủng Diaronium",
+  "Description:ClothingBlock:51": "Ủng kim cương được nâng cấp bằng Diaronium. Có độ bền cực cao, khả năng bảo vệ vượt trội và tăng tốc độ di chuyển.",
+  "Description:UpgradedCopperRecipe01": "Nâng cấp áo giáp ngực gỗ bằng ván gỗ và dây.",
+  "Description:UpgradedCopperRecipe02": "Nâng cấp thỏi đồng bằng đồng và than.",
+  "Description:UpgradedCopperRecipe03": "Nâng cấp thỏi đồng bằng đồng và than trong lò.",
+  "Description:UpgradedCopperRecipe04": "Nâng cấp quần giáp gỗ bằng ván gỗ và dây.",
+  "Description:UpgradedCopperRecipe05": "Nâng cấp mũ giáp đồng bằng thỏi đồng nâng cấp và than.",
+  "Description:UpgradedCopperRecipe06": "Nâng cấp áo giáp ngực đồng bằng thỏi đồng nâng cấp và than.",
+  "Description:UpgradedCopperRecipe07": "Nâng cấp quần giáp đồng bằng thỏi đồng nâng cấp và than.",
+  "Description:UpgradedCopperRecipe08": "Nâng cấp ủng đồng bằng thỏi đồng nâng cấp và than.",
+  "Description:UpgradedCopperRecipe09": "Nâng cấp mũ giáp sắt bằng thỏi sắt nâng cấp.",
+  "Description:UpgradedCopperRecipe10": "Nâng cấp áo giáp ngực sắt bằng thỏi sắt nâng cấp.",
+  "Description:UpgradedCopperRecipe11": "Nâng cấp quần giáp sắt bằng thỏi sắt nâng cấp.",
+  "Description:UpgradedCopperRecipe12": "Nâng cấp ủng sắt bằng thỏi sắt nâng cấp.",
+  "Description:UpgradedCopperRecipe13": "Tạo thỏi sắt nâng cấp một nửa từ sắt và thỏi đồng.",
+  "Description:UpgradedCopperRecipe14": "Ghép hai thỏi sắt nâng cấp một nửa thành một thỏi hoàn chỉnh.",
+  "Description:UpgradedCopperRecipe15": "Kết hợp kim cương với sắt để tạo khối sắt và kim cương.",
+  "Description:UpgradedCopperRecipe16": "Kết hợp quặng sắt với kim cương để tạo khối sắt và kim cương.",
+  "Description:UpgradedCopperRecipe17": "Nâng cấp mũ giáp kim cương bằng Diaronium.",
+  "Description:UpgradedCopperRecipe18": "Nâng cấp áo giáp ngực kim cương bằng Diaronium.",
+  "Description:UpgradedCopperRecipe19": "Nâng cấp quần giáp kim cương bằng Diaronium.",
+  "Description:UpgradedCopperRecipe20": "Nâng cấp ủng kim cương bằng Diaronium.",
+  "Description:UpgradedCopperRecipe21": "Nung khối sắt và kim cương để tạo Diaronium bán thành phẩm.",
+  "Description:UpgradedCopperRecipe22": "Kết hợp Diaronium bán thành phẩm với thỏi sắt nâng cấp để tạo thỏi Diaronium hoàn chỉnh."
 }
