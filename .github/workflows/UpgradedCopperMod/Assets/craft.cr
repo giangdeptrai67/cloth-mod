@@ -36,4 +36,16 @@
     "cbc"
     " a "
 </Recipe>
+<Recipe Result="ClothingBlock:44" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="clothing:10" Description="upgrade iron helmet from upgraded iron ingot">
+    "ab"
+</Recipe>
+<Recipe Result="ClothingBlock:45" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="clothing:3" Description="upgrade iron chestplate from upgraded iron ingot">
+    "ab"
+</Recipe>
+<Recipe Result="ClothingBlock:46" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="clothing:4" Description="upgrade iron legging from upgraded iron ingot">
+    "ab"
+</Recipe>
+<Recipe Result="ClothingBlock:47" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="clothing:9" Description="upgrade iron boots from upgraded iron ingot">
+    "ab"
+</Recipe>
 </Mod>
