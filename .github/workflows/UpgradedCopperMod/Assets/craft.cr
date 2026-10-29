@@ -54,10 +54,10 @@
     <Recipe Result="UpgradedIronIngotBlock" ResultCount="1" RequiredHeatLevel ="2" a="halfupgradedironingot" Description="make upgraded iron ingot from 2 half upgraded iron ingot">
     "aa"
 </Recipe>
-    <Recipe Result="ChunkOfIronAndDiamond" ResultCount="1" RequiredHeatLevel ="2" a="ironingot" b="diamond" Description="combine diamond with iron and see what come out">
+    <Recipe Result="ChunkOfIronAndDiamondBlock" ResultCount="1" RequiredHeatLevel ="2" a="ironingot" b="diamond" Description="combine diamond with iron and see what come out">
     "ab"
   </Recipe>
-<Recipe Result="ChunkOfIronAndDiamond" ResultCount="1" RequiredHeatLevel ="2" a="ironorechunk" b="diamond" Description="combine diamond with iron and see what come out">
+<Recipe Result="ChunkOfIronAndDiamondBlock" ResultCount="1" RequiredHeatLevel ="2" a="ironorechunk" b="diamond" Description="combine diamond with iron and see what come out">
     "ab"
   </Recipe>
 </Mod>
