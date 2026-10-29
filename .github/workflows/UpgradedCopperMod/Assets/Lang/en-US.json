@@ -8,6 +8,10 @@
   "UpgradedIronIngotBlock:0": {
       "DisplayName": "Upgraded iron ingot",
       "Description": "an ungraded verison of iron ingot"
-  }
+  },
+
+    "HalfUpgradedIronIngotBlock:0": {
+      "DisplayName": "Half upgraded iron ingot",
+      "Description": "half upgraded iron ingot, only use to make upgraded iron ingot"
   }
 }
