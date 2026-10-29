@@ -60,4 +60,22 @@
 <Recipe Result="ChunkOfIronAndDiamondBlock" ResultCount="1" RequiredHeatLevel ="2" a="ironorechunk" b="diamond" Description="combine diamond with iron and see what come out">
     "ab"
   </Recipe>
+<Recipe Result="ClothingBlock:48" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="clothing:21" Description="upgrade diamond helmet from diaronium">
+    "ab"
+</Recipe>
+<Recipe Result="ClothingBlock:49" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="clothing:19" Description="upgrade diamond chestplate from diaronium">
+    "ab"
+</Recipe>
+<Recipe Result="ClothingBlock:50" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="clothing:20" Description="upgrade diamond legging from diaronium">
+    "ab"
+</Recipe>
+<Recipe Result="ClothingBlock:51" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="clothing:22" Description="upgrade diamond boots from diaronium">
+    "ab"
+</Recipe>
+<Recipe Result="HalfUpgradeddiaroniumblock" ResultCount="1" RequiredHeatLevel="2" a="chunkofironanddiamond" Description="make half upgraded diaronium ingot from smelting chunk of iron and diamond">
+    "a"
+</Recipe>
+Recipe Result="DiaroniumIngotblock" ResultCount="1" RequiredHeatLevel="2" a="halfupgradeddiaroniumingot" b="upgradedironingot" Description="make full diaronium ingot from half upgraded iron ingot and half upgraded diaronium">
+    "aba"
+</Recipe>
 </Mod>
