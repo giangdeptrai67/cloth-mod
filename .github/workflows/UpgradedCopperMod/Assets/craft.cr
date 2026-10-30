@@ -129,7 +129,7 @@
 <Recipe Result="UpgradedIronHammerBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="ironhammer" Description="Upgrade iron Hammer">
     "ab"
 </Recipe>
-<Recipe Result="DiaroniumHammerBlock" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="upgradedironhammer" Description="Upgrade iron Hammer to diaronium hammer">
+<Recipe Result="UpgradedDiaroniumHammerBlock" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="upgradedironhammer" Description="Upgrade iron Hammer to diaronium hammer">
     "ab"
 </Recipe>
 </Mod>
