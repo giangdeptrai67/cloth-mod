@@ -78,5 +78,41 @@ namespace Game {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
     }
-    
+    public class DiaroniumPickaxeBlock : PickaxeBlock {
+        public Texture2D m_texture;
+
+        public DiaroniumPickaxeBlock() : base(0, 1) { }
+
+        public override void Initialize() {
+            base.Initialize();
+            m_texture = ContentManager.Get<Texture2D>("Textures/diaroniumtexturetw");
+        }
+
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
+ }
+    public class DiaroniumAxeBlock : AxeBlock {
+        public Texture2D m_texture;
+
+        public DiaroniumAxeBlock() : base(0, 1) { }
+
+        public override void Initialize() {
+            base.Initialize();
+            m_texture = ContentManager.Get<Texture2D>("Textures/diaroniumtexturetw");
+        }
+
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
     }
+    public class DiaroniumShovelBlock : ShovelBlock {
+        public Texture2D m_texture;
+
+        public DiaroniumShovelBlock() : base(0, 1) { }
+
+        public override void Initialize() {
+            base.Initialize();
+            m_texture = ContentManager.Get<Texture2D>("Textures/diaroniumtexturetw");
+        }
+
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
+    }
+}
+
