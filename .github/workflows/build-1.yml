@@ -1,0 +1,78 @@
+name: Build scmod
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Build
+        run: dotnet build .github/workflows/UpgradedCopperMod/SurvivalcraftTemplateModForAPI.csproj -c Release --no-incremental
+
+      - name: Package scmod (modinfo.json at the root)
+        shell: python
+        run: |
+          import zipfile, pathlib, sys, json, os
+
+          root = pathlib.Path(".github/workflows/UpgradedCopperMod")
+
+          # Read the version from modinfo.json -> giangscexpansionv<version>.scmod
+          info_path = root / "modinfo.json"
+          if not info_path.exists():
+              sys.exit("modinfo.json not found in " + str(root))
+          info = json.loads(info_path.read_text(encoding="utf-8-sig"))
+          version = str(info.get("Version", "")).strip()
+          if not version:
+              sys.exit("No Version field in modinfo.json")
+          out_name = f"giangscexpansionv{version}.scmod"
+          print("Output file:", out_name)
+
+          dlls = list(root.glob("bin/Release/**/UpgradedCopperMod.dll"))
+          if not dlls:
+              sys.exit("UpgradedCopperMod.dll not found")
+          out = dlls[0].parent
+          added = set()
+          data_ext = {".csv", ".lang", ".json", ".xml", ".png", ".txt"}
+
+          with zipfile.ZipFile(out_name, "w", zipfile.ZIP_DEFLATED) as z:
+              # 1) everything from the build output
+              for p in sorted(out.rglob("*")):
+                  if p.is_file() and p.suffix != ".scmod":
+                      arc = p.relative_to(out).as_posix()
+                      z.write(p, arc)
+                      added.add(arc)
+              # 2) data files from the project folder (csv, lang...), skip bin/obj
+              for p in sorted(root.rglob("*")):
+                  if not p.is_file() or p.suffix.lower() not in data_ext:
+                      continue
+                  rel = p.relative_to(root)
+                  if rel.parts[0] in ("bin", "obj"):
+                      continue
+                  arc = rel.as_posix()
+                  if arc not in added:
+                      z.write(p, arc)
+                      added.add(arc)
+
+          names = zipfile.ZipFile(out_name).namelist()
+          print("\n".join(names))
+          if "modinfo.json" not in names or "UpgradedCopperMod.dll" not in names:
+              sys.exit("modinfo.json or dll is not at the root of the scmod")
+
+          # Pass the file name to the next steps
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as f:
+              f.write(f"SCMOD_NAME={out_name}\n")
+
+      - name: Upload scmod
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.SCMOD_NAME }}
+          path: ${{ env.SCMOD_NAME }}
+          if-no-files-found: error
