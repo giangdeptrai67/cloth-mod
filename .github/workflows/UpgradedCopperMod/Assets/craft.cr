@@ -75,7 +75,61 @@
 <Recipe Result="HalfUpgradedDiaroniumIngotBlock" ResultCount="1" RequiredHeatLevel="2" a="chunkofironanddiamond" Description="make half upgraded diaronium ingot from smelting chunk of iron and diamond">
     "a"
 </Recipe>
-<Recipe Result="DiaroniumIngotBlock" ResultCount="1" RequiredHeatLevel="2" a="halfdiaronium" b="upgradedironingot" Description="make full diaronium ingot from half upgraded iron ingot and half upgraded diaronium">
-    "aba"
+<Recipe Result="DiaroniumIngotBlock" ResultCount="1" RequiredHeatLevel="2" a="halfdiaronium" b="upgradedironingot" Description="make full diaronium ingot from upgraded iron ingot and half upgraded diaronium">
+    "ab"
  </Recipe>
+<Recipe Result="DiaroniumPickaxeBlock" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="diamondpickaxe" Description="Upgrade diamond pickaxe to diaronium pickaxe">
+    "ab"
+ </Recipe>
+<Recipe Result="DiaroniumShovelBlock" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="diamondshovel" Description="Upgrade diamond shovel to diaronium shovel">
+    "ab"
+ </Recipe>
+<Recipe Result="DiaroniumAxeBlock" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="diamondaxe" Description="Upgrade diamond axe to diaronium axe">
+    "ab"
+ </Recipe>
+<Recipe Result="DiaroniumSpearBlock" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="diamondspear" Description="Upgrade diamond spear to diaronium spear">
+    "ab"
+</Recipe>
+<Recipe Result="DiaroniumMacheteBlock" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="diamondmachete" Description="Upgrade diamond machete to diaronium machete">
+    "ab"
+</Recipe>
+<Recipe Result="UpgradedCopperPickaxeBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedcopperingot" b="copperpickaxe" Description="Upgrade copper pickaxe">
+    "ab"
+ </Recipe>
+<Recipe Result="UpgradedCopperShovelBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedcopperingot" b="coppershovel" Description="Upgrade copper shovel ">
+    "ab"
+ </Recipe>
+<Recipe Result="UpgradedCopperAxeBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedcopperingot" b="copperaxe" Description="Upgrade copper axe ">
+    "ab"
+ </Recipe>
+<Recipe Result="UpgradedCopperSpearBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedcopperingot" b="copperspear" Description="Upgrade copper spear ">
+    "ab"
+</Recipe>
+<Recipe Result="UpgradedCopperMacheteBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedcopperingot" b="coppermachete" Description="Upgrade copper machete">
+    "ab"
+</Recipe>
+<Recipe Result="UpgradedIronPickaxeBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="ironpickaxe" Description="Upgrade iron pickaxe">
+    "ab"
+ </Recipe>
+<Recipe Result="UpgradedIronShovelBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="ironshovel" Description="Upgrade iron shovel ">
+    "ab"
+ </Recipe>
+<Recipe Result="UpgradedIronAxeBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="ironaxe" Description="Upgrade iron axe ">
+    "ab"
+ </Recipe>
+<Recipe Result="UpgradedIronSpearBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="ironspear" Description="Upgrade iron spear ">
+    "ab"
+</Recipe>
+<Recipe Result="UpgradedIronMacheteBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="ironmachete" Description="Upgrade iron machete">
+    "ab"
+</Recipe>
+<Recipe Result="UpgradedIronMacheteBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="ironmachete" Description="Upgrade iron machete">
+    "ab"
+</Recipe>
+<Recipe Result="UpgradedIronHammerBlock" ResultCount="1" RequiredHeatLevel="2" a="upgradedironingot" b="ironhammer" Description="Upgrade iron Hammer">
+    "ab"
+</Recipe>
+<Recipe Result="DiaroniumHammerBlock" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="upgradedironhammer" Description="Upgrade iron Hammer to diaronium hammer">
+    "ab"
+</Recipe>
 </Mod>
