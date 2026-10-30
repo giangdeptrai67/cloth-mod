@@ -126,7 +126,7 @@ public class DiaroniumPickaxeBlock : PickaxeBlock {
 public class UpgradedCopperRakeBlock : RakeBlock {
         public Texture2D m_texture;
 
-        public UpgradedCopperBlock() : base(0, 1) { }
+        public UpgradedCopperRakeBlock() : base(0, 1) { }
 
         public override void Initialize() {
             base.Initialize();
