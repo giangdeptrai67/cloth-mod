@@ -34,7 +34,6 @@
         </None>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="UpgradedCopperIngotBlock.cs"/>
-        <Compile Include="UpgradedCopperModLoader.cs"/>
+        <Compile Include="*.cs"/>
     </ItemGroup>
 </Project>
