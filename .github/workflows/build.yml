@@ -46,7 +46,7 @@ jobs:
                   if arc not in added:
                       z.write(p, arc)
                       added.add(arc)
-          names = zipfile.ZipFile("UpgradedCopperMod.scmod").namelist()
+          names = zipfile.ZipFile("Giangscexpansion.scmod").namelist()
           print("\n".join(names))
           if "modinfo.json" not in names or "UpgradedCopperMod.dll" not in names:
               sys.exit("modinfo.json or dll is not at the root of the scmod")
