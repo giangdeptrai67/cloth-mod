@@ -1,0 +1,108 @@
+{
+  "Blocks": {
+    "UpgradedCopperIngotBlock:0": {
+      "DisplayName": "Upgraded copper ingot",
+      "Description": "an ungraded verison of copper ingot, use to make upgraded version of original copper items"
+    },
+    "UpgradedIronIngotBlock:0": {
+      "DisplayName": "Upgraded iron ingot",
+      "Description": "an ungraded verison of iron ingot, use to make upgraded version of original iron items"
+    },
+    "HalfUpgradedIronIngotBlock:0": {
+      "DisplayName": "Half upgraded iron ingot",
+      "Description": "half upgraded iron ingot, only use to make upgraded iron ingot"
+    },
+    "ChunkOfIronAndDiamondBlock:0": {
+      "DisplayName": "Chunk of iron and diamond",
+      "Description": "chunk of iron and diamond, put it in a furnace and see what come out"
+    },
+    "DiaroniumIngotBlock:0": {
+      "DisplayName": "Diaronium ingot",
+      "Description": "Strongest ingot, upgraded version of diamond, double the power of diamonds."
+    },
+    "HalfUpgradedDiaroniumIngotBlock:0": {
+      "DisplayName": "Half upgraded diaronium ingot",
+      "Description": "Strongest ingot, upgraded version of diamond,can only be used in making full diaronium ingot. "
+    },
+    "UpgradedCopperMacheteBlock:0": {
+      "DisplayName": "Upgraded Copper Machete",
+      "Description": "A machete made from upgraded copper."
+    },
+    "UpgradedCopperSpearBlock:0": {
+      "DisplayName": "Upgraded Copper Spear",
+      "Description": "A spear made from upgraded copper."
+    },
+    "UpgradedIronMacheteBlock:0": {
+      "DisplayName": "Upgraded Iron Machete",
+      "Description": "A machete made from upgraded iron."
+    },
+    "UpgradedIronSpearBlock:0": {
+      "DisplayName": "Upgraded Iron Spear",
+      "Description": "A spear made from upgraded iron."
+    },
+    "DiaroniumMacheteBlock:0": {
+      "DisplayName": "Diaronium Machete",
+      "Description": "A machete made from diaronium."
+    },
+    "DiaroniumSpearBlock:0": {
+      "DisplayName": "Diaronium Spear",
+      "Description": "A spear made from diaronium."
+    },
+    "UpgradedCopperPickaxeBlock:0": {
+      "DisplayName": "Upgraded Copper Pickaxe",
+      "Description": "A pickaxe made from upgraded copper."
+    },
+    "UpgradedCopperAxeBlock:0": {
+      "DisplayName": "Upgraded Copper Axe",
+      "Description": "An axe made from upgraded copper."
+    },
+    "UpgradedCopperShovelBlock:0": {
+      "DisplayName": "Upgraded Copper Shovel",
+      "Description": "A shovel made from upgraded copper."
+    },
+    "UpgradedCopperRakeBlock:0": {
+      "DisplayName": "Upgraded Copper Rake",
+      "Description": "A rake made from upgraded copper."
+    },
+    "UpgradedIronPickaxeBlock:0": {
+      "DisplayName": "Upgraded Iron Pickaxe",
+      "Description": "A pickaxe made from upgraded iron."
+    },
+    "UpgradedIronAxeBlock:0": {
+      "DisplayName": "Upgraded Iron Axe",
+      "Description": "An axe made from upgraded iron."
+    },
+    "UpgradedIronShovelBlock:0": {
+      "DisplayName": "Upgraded Iron Shovel",
+      "Description": "A shovel made from upgraded iron."
+    },
+    "UpgradedIronRakeBlock:0": {
+      "DisplayName": "Upgraded Iron Rake",
+      "Description": "A rake made from upgraded iron."
+    },
+    "UpgradedIronHammerBlock:0": {
+      "DisplayName": "Upgraded Iron Hammer",
+      "Description": "A hammer made from upgraded iron."
+    },
+    "DiaroniumPickaxeBlock:0": {
+      "DisplayName": "Diaronium Pickaxe",
+      "Description": "A pickaxe made from diaronium."
+    },
+    "DiaroniumAxeBlock:0": {
+      "DisplayName": "Diaronium Axe",
+      "Description": "An axe made from diaronium."
+    },
+    "DiaroniumShovelBlock:0": {
+      "DisplayName": "Diaronium Shovel",
+      "Description": "A shovel made from diaronium."
+    },
+    "DiaroniumRakeBlock:0": {
+      "DisplayName": "Diaronium Rake",
+      "Description": "A rake made from diaronium."
+    },
+    "UpgradedDiaroniumHammerBlock:0": {
+      "DisplayName": "Upgraded Diaronium Hammer",
+      "Description": "A hammer made from diaronium."
+    }
+  }
+}
