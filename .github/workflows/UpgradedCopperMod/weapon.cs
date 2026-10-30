@@ -14,7 +14,6 @@ namespace Game {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
   }
-  namespace Game {
   public class DiaroniumMacheteBlock : MacheteBlock {
         public Texture2D m_texture;
 
@@ -27,7 +26,6 @@ namespace Game {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
   }
-    namespace Game {
   public class UpgradedCopperMacheteBlock : MacheteBlock {
         public Texture2D m_texture;
 
@@ -40,7 +38,6 @@ namespace Game {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
   }
-      namespace Game {
   public class UpgradedCopperSpearBlock : SpearBlock {
         public Texture2D m_texture;
 
@@ -53,7 +50,6 @@ namespace Game {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
   }
-        namespace Game {
   public class UpgradedIronMacheteBlock : MacheteBlock {
         public Texture2D m_texture;
 
@@ -66,7 +62,6 @@ namespace Game {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
   }
-      namespace Game {
   public class UpgradedIronSpearBlock : SpearBlock {
         public Texture2D m_texture;
 
