@@ -61,24 +61,84 @@
   "Description:UpgradedCopperRecipe20": "Nâng cấp ủng kim cương bằng Diaronium.",
   "Description:UpgradedCopperRecipe21": "Nung khối sắt và kim cương để tạo Diaronium bán thành phẩm.",
   "Description:UpgradedCopperRecipe22": "Kết hợp Diaronium bán thành phẩm với thỏi sắt nâng cấp để tạo thỏi Diaronium hoàn chỉnh.",
-    "UpgradedCopperMacheteBlock": "Dao đồng nâng cấp", "Dao được chế tạo từ đồng nâng cấp.",
-"UpgradedCopperSpearBlock": "Giáo đồng nâng cấp", "Giáo được chế tạo từ đồng nâng cấp.",
-"UpgradedIronMacheteBlock": "Dao sắt nâng cấp", "Dao được chế tạo từ sắt nâng cấp.",
-"UpgradedIronSpearBlock": "Giáo sắt nâng cấp", "Giáo được chế tạo từ sắt nâng cấp.",
-"DiaroniumMacheteBlock": "Dao Diaronium", "Dao được chế tạo từ Diaronium.",
-"DiaroniumSpearBlock": "Giáo Diaronium", "Giáo được chế tạo từ Diaronium.",
-"UpgradedCopperPickaxeBlock": "Cuốc chim đồng nâng cấp", "Cuốc chim được chế tạo từ đồng nâng cấp.",
-"UpgradedCopperAxeBlock": "Rìu đồng nâng cấp", "Rìu được chế tạo từ đồng nâng cấp.",
-"UpgradedCopperShovelBlock": "Xẻng đồng nâng cấp", "Xẻng được chế tạo từ đồng nâng cấp.",
-"UpgradedCopperRakeBlock": "Cào đồng nâng cấp", "Cào được chế tạo từ đồng nâng cấp.",
-"UpgradedIronPickaxeBlock": "Cuốc chim sắt nâng cấp", "Cuốc chim được chế tạo từ sắt nâng cấp.",
-"UpgradedIronAxeBlock": "Rìu sắt nâng cấp", "Rìu được chế tạo từ sắt nâng cấp.",
-"UpgradedIronShovelBlock": "Xẻng sắt nâng cấp", "Xẻng được chế tạo từ sắt nâng cấp.",
-"UpgradedIronRakeBlock": "Cào sắt nâng cấp", "Cào được chế tạo từ sắt nâng cấp.",
-"UpgradedIronHammerBlock": "Búa sắt nâng cấp", "Búa được chế tạo từ sắt nâng cấp.",
-"DiaroniumPickaxeBlock": "Cuốc chim Diaronium", "Cuốc chim được chế tạo từ Diaronium.",
-"DiaroniumAxeBlock": "Rìu Diaronium", "Rìu được chế tạo từ Diaronium.",
-"DiaroniumShovelBlock": "Xẻng Diaronium", "Xẻng được chế tạo từ Diaronium.",
-"DiaroniumRakeBlock": "Cào Diaronium", "Cào được chế tạo từ Diaronium.",
-"UpgradedDiaroniumHammerBlock": "Búa Diaronium nâng cấp", "Búa được chế tạo từ Diaronium."
+      "UpgradedCopperMacheteBlock:0": {
+    "DisplayName": "Dao đồng nâng cấp",
+    "Description": "Dao được chế tạo từ đồng nâng cấp."
+  },
+  "UpgradedCopperSpearBlock:0": {
+    "DisplayName": "Giáo đồng nâng cấp",
+    "Description": "Giáo được chế tạo từ đồng nâng cấp."
+  },
+  "UpgradedIronMacheteBlock:0": {
+    "DisplayName": "Dao sắt nâng cấp",
+    "Description": "Dao được chế tạo từ sắt nâng cấp."
+  },
+  "UpgradedIronSpearBlock:0": {
+    "DisplayName": "Giáo sắt nâng cấp",
+    "Description": "Giáo được chế tạo từ sắt nâng cấp."
+  },
+  "DiaroniumMacheteBlock:0": {
+    "DisplayName": "Dao Diaronium",
+    "Description": "Dao được chế tạo từ Diaronium."
+  },
+  "DiaroniumSpearBlock:0": {
+    "DisplayName": "Giáo Diaronium",
+    "Description": "Giáo được chế tạo từ Diaronium."
+  },
+  "UpgradedCopperPickaxeBlock:0": {
+    "DisplayName": "Cuốc chim đồng nâng cấp",
+    "Description": "Cuốc chim được chế tạo từ đồng nâng cấp."
+  },
+  "UpgradedCopperAxeBlock:0": {
+    "DisplayName": "Rìu đồng nâng cấp",
+    "Description": "Rìu được chế tạo từ đồng nâng cấp."
+  },
+  "UpgradedCopperShovelBlock:0": {
+    "DisplayName": "Xẻng đồng nâng cấp",
+    "Description": "Xẻng được chế tạo từ đồng nâng cấp."
+  },
+  "UpgradedCopperRakeBlock:0": {
+    "DisplayName": "Cào đồng nâng cấp",
+    "Description": "Cào được chế tạo từ đồng nâng cấp."
+  },
+  "UpgradedIronPickaxeBlock:0": {
+    "DisplayName": "Cuốc chim sắt nâng cấp",
+    "Description": "Cuốc chim được chế tạo từ sắt nâng cấp."
+  },
+  "UpgradedIronAxeBlock:0": {
+    "DisplayName": "Rìu sắt nâng cấp",
+    "Description": "Rìu được chế tạo từ sắt nâng cấp."
+  },
+  "UpgradedIronShovelBlock:0": {
+    "DisplayName": "Xẻng sắt nâng cấp",
+    "Description": "Xẻng được chế tạo từ sắt nâng cấp."
+  },
+  "UpgradedIronRakeBlock:0": {
+    "DisplayName": "Cào sắt nâng cấp",
+    "Description": "Cào được chế tạo từ sắt nâng cấp."
+  },
+  "UpgradedIronHammerBlock:0": {
+    "DisplayName": "Búa sắt nâng cấp",
+    "Description": "Búa được chế tạo từ sắt nâng cấp."
+  },
+  "DiaroniumPickaxeBlock:0": {
+    "DisplayName": "Cuốc chim Diaronium",
+    "Description": "Cuốc chim được chế tạo từ Diaronium."
+  },
+  "DiaroniumAxeBlock:0": {
+    "DisplayName": "Rìu Diaronium",
+    "Description": "Rìu được chế tạo từ Diaronium."
+  },
+  "DiaroniumShovelBlock:0": {
+    "DisplayName": "Xẻng Diaronium",
+    "Description": "Xẻng được chế tạo từ Diaronium."
+  },
+  "DiaroniumRakeBlock:0": {
+    "DisplayName": "Cào Diaronium",
+    "Description": "Cào được chế tạo từ Diaronium."
+  },
+  "UpgradedDiaroniumHammerBlock:0": {
+    "DisplayName": "Búa Diaronium nâng cấp",
+    "Description": "Búa được chế tạo từ Diaronium."
+  }
 }
