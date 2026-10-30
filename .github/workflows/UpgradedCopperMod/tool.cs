@@ -110,4 +110,65 @@ public class DiaroniumPickaxeBlock : PickaxeBlock {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
     }
+        public class UpgradedIronRakeBlock : RakeBlock {
+        public Texture2D m_texture;
+
+        public UpgradedIronRakeBlock() : base(0, 1) { }
+
+        public override void Initialize() {
+            base.Initialize();
+            m_texture = ContentManager.Get<Texture2D>("Textures/irontexturetw");
+        }
+
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
+        }
+       
+public class UpgradedCopperRakeBlock : RakeBlock {
+        public Texture2D m_texture;
+
+        public UpgradedCopperBlock() : base(0, 1) { }
+
+        public override void Initialize() {
+            base.Initialize();
+            m_texture = ContentManager.Get<Texture2D>("Textures/coppertexturetw");
+        }
+
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
+        }
+   public class DiaroniumRakeBlock : RakeBlock {
+        public Texture2D m_texture;
+
+        public DiaroniumRakeBlock() : base(0, 1) { }
+
+        public override void Initialize() {
+            base.Initialize();
+            m_texture = ContentManager.Get<Texture2D>("Textures/diaroniumtexturetw");
+        }
+
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
+        }
+        public class UpgradedIronHammerBlock : HammerBlock {
+        public Texture2D m_texture;
+
+        public UpgradedIronHammerBlock() : base(0, 1) { }
+
+        public override void Initialize() {
+            base.Initialize();
+            m_texture = ContentManager.Get<Texture2D>("Textures/irontexturetw");
+        }
+
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
+        }
+        public class UpgradedDiaroniumHammerBlock : HammerBlock {
+        public Texture2D m_texture;
+
+        public UpgradedDiaroniumHammerBlock() : base(0, 1) { }
+
+        public override void Initialize() {
+            base.Initialize();
+            m_texture = ContentManager.Get<Texture2D>("Textures/diaroniumtexturetw");
+        }
+
+        public override Texture2D GetDefaultTexture(int value) => m_texture;
+        }
 }
