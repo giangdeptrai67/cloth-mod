@@ -5,7 +5,7 @@ namespace Game {
 public class BlockOfUpgradedCopperBlock : CubeBlock {
         public Texture2D m_texture;
 
-        public BlockOfUpgradedCopperBlock() : base(1) { }
+        public BlockOfUpgradedCopperBlock() { }
 
         public override void Initialize() {
             base.Initialize();
@@ -17,7 +17,7 @@ public class BlockOfUpgradedCopperBlock : CubeBlock {
 public class BlockOfUpgradedIronBlock : CubeBlock {
         public Texture2D m_texture;
 
-        public BlockOfUpgradedIronBlock() : base(3) { }
+        public BlockOfUpgradedIronBlock() { }
 
         public override void Initialize() {
             base.Initialize();
@@ -29,7 +29,7 @@ public class BlockOfUpgradedIronBlock : CubeBlock {
 public class BlockOfDiaroniumBlock : CubeBlock {
         public Texture2D m_texture;
 
-        public BlockOfDiaroniumBlock() : base(2) { }
+        public BlockOfDiaroniumBlock() { }
 
         public override void Initialize() {
             base.Initialize();
