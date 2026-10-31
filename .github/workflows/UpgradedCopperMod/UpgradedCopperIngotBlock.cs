@@ -1,3 +1,5 @@
+
+using System.Collections.Generic;
 using Engine;
 using Engine.Graphics;
 
@@ -84,7 +86,7 @@ namespace Game {
     private BlockMesh[] m_blockMeshesByRotation = new BlockMesh[4];
     private Texture2D m_texture;
 
-    // if the head faces away from you when placed, change this to 2 (or 1 / 3 for sideways)
+    
     private const int RotationOffset = 0;
 
     public override void Initialize()
@@ -129,11 +131,11 @@ namespace Game {
         generator.GenerateMeshVertices(this, x, y, z, m_blockMeshesByRotation[rotation], Color.White, null,
             geometry.GetGeometry(m_texture).SubsetOpaque);
     }
-
-    public override IEnumerable<BlockDropValue> GetDropValues(SubsystemTerrain subsystemTerrain,
-        int oldValue, int newValue, int toolLevel)
+        public override void GetDropValues(SubsystemTerrain subsystemTerrain, int oldValue, int newValue,
+        int toolLevel, List<BlockDropValue> dropValues, out bool showDebris)
     {
-        yield return new BlockDropValue { Value = Terrain.MakeBlockValue(BlockIndex), Count = 1 };
+        dropValues.Add(new BlockDropValue { Value = Terrain.MakeBlockValue(BlockIndex), Count = 1 });
+        showDebris = true;
     }
 
     public override void DrawBlock(PrimitivesRenderer3D primitivesRenderer, int value, Color color,
