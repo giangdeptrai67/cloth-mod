@@ -81,32 +81,59 @@ namespace Game {
     public class BearHeadBlock : Block
 {
     private BlockMesh m_standaloneBlockMesh = new BlockMesh();
-    private BlockMesh m_blockMesh = new BlockMesh();
+    private BlockMesh[] m_blockMeshesByRotation = new BlockMesh[4];
     private Texture2D m_texture;
+
+    // if the head faces away from you when placed, change this to 2 (or 1 / 3 for sideways)
+    private const int RotationOffset = 0;
 
     public override void Initialize()
     {
         Model model = ContentManager.Get<Model>("Models/BearHead");
         ModelMesh mesh = model.FindMesh("BearHead");
         Matrix boneTransform = BlockMesh.GetBoneAbsoluteTransform(mesh.ParentBone);
-        
+
         m_standaloneBlockMesh.AppendModelMeshPart(
             mesh.MeshParts[0], boneTransform, false, false, false, false, Color.White);
 
-        m_blockMesh.AppendModelMeshPart(
-            mesh.MeshParts[0],
-            boneTransform * Matrix.CreateTranslation(0.5f, 0.5f, 0.5f),
-            false, false, false, false, Color.White);
+        for (int i = 0; i < 4; i++)
+        {
+            m_blockMeshesByRotation[i] = new BlockMesh();
+            m_blockMeshesByRotation[i].AppendModelMeshPart(
+                mesh.MeshParts[0],
+                boneTransform * Matrix.CreateRotationY(i * MathUtils.PI / 2f) * Matrix.CreateTranslation(0.5f, 0.5f, 0.5f),
+                false, false, false, false, Color.White);
+        }
 
-        m_texture = ContentManager.Get<Texture2D>("Textures/Creature/bearheadtexture");
+        m_texture = ContentManager.Get<Texture2D>("Textures/Creature/bearheadtexture.png");
         base.Initialize();
+    }
+
+    public override BlockPlacementData GetPlacementValue(SubsystemTerrain subsystemTerrain,
+        ComponentMiner componentMiner, int value, TerrainRaycastResult raycastResult)
+    {
+        Vector3 forward = Matrix.CreateFromQuaternion(
+            componentMiner.ComponentCreature.ComponentCreatureModel.EyeRotation).Forward;
+        int rotation = ((int)Math.Round(MathUtils.Atan2(forward.X, forward.Z) / (MathUtils.PI / 2f)) + RotationOffset) & 3;
+
+        BlockPlacementData result;
+        result.Value = Terrain.ReplaceData(Terrain.ReplaceContents(0, BlockIndex), rotation);
+        result.CellFace = raycastResult.CellFace;
+        return result;
     }
 
     public override void GenerateTerrainVertices(BlockGeometryGenerator generator,
         TerrainGeometry geometry, int value, int x, int y, int z)
     {
-        generator.GenerateMeshVertices(this, x, y, z, m_blockMesh, Color.White, null,
+        int rotation = Terrain.ExtractData(value) & 3;
+        generator.GenerateMeshVertices(this, x, y, z, m_blockMeshesByRotation[rotation], Color.White, null,
             geometry.GetGeometry(m_texture).SubsetOpaque);
+    }
+
+    public override IEnumerable<BlockDropValue> GetDropValues(SubsystemTerrain subsystemTerrain,
+        int oldValue, int newValue, int toolLevel)
+    {
+        yield return new BlockDropValue { Value = Terrain.MakeBlockValue(BlockIndex), Count = 1 };
     }
 
     public override void DrawBlock(PrimitivesRenderer3D primitivesRenderer, int value, Color color,
@@ -117,4 +144,5 @@ namespace Game {
     }
 }
 }
+
 
