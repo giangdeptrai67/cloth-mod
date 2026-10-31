@@ -116,12 +116,11 @@ namespace Game {
     {
         Vector3 forward = Matrix.CreateFromQuaternion(
             componentMiner.ComponentCreature.ComponentCreatureModel.EyeRotation).Forward;
-        int rotation = ((int)Math.Round(MathUtils.Atan2(forward.X, forward.Z) / (MathUtils.PI / 2f)) + RotationOffset) & 3;
-
+        int rotation = ((int)MathUtils.Round(MathUtils.Atan2(forward.X, forward.Z) / (MathUtils.PI / 2f)) + RotationOffset) & 3;
         BlockPlacementData result;
         result.Value = Terrain.ReplaceData(Terrain.ReplaceContents(0, BlockIndex), rotation);
         result.CellFace = raycastResult.CellFace;
-        return result;
+        BlockPlacementData result = new BlockPlacementData();
     }
 
     public override void GenerateTerrainVertices(BlockGeometryGenerator generator,
