@@ -87,7 +87,8 @@ namespace Game {
     private Texture2D m_texture;
 
     
-    private const int RotationOffset = 0;
+        private const int RotationOffset = 2;
+    private const float HeightOffset = 0.2f;
 
     public override void Initialize()
     {
@@ -101,10 +102,10 @@ namespace Game {
         for (int i = 0; i < 4; i++)
         {
             m_blockMeshesByRotation[i] = new BlockMesh();
-            m_blockMeshesByRotation[i].AppendModelMeshPart(
-                mesh.MeshParts[0],
-                boneTransform * Matrix.CreateRotationY(i * MathUtils.PI / 2f) * Matrix.CreateTranslation(0.5f, 0.5f, 0.5f),
-                false, false, false, false, Color.White);
+                    m_blockMeshesByRotation[i].AppendModelMeshPart(
+            mesh.MeshParts[0],
+            boneTransform * Matrix.CreateRotationY(i * MathUtils.PI / 2f) * Matrix.CreateTranslation(0.5f, HeightOffset, 0.5f),
+            false, false, false, false, Color.White);
         }
 
         m_texture = ContentManager.Get<Texture2D>("Textures/Creature/bearheadtexture");
