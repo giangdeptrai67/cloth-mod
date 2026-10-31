@@ -86,7 +86,7 @@ namespace Game {
 
     public override void Initialize()
     {
-        Model model = ContentManager.Get<Model>("Models/BearHead");
+        Model model = ContentManager.Get<Model>("Models/bearheadtexture");
         ModelMesh mesh = model.FindMesh("BearHead");
         Matrix boneTransform = BlockMesh.GetBoneAbsoluteTransform(mesh.ParentBone);
         
