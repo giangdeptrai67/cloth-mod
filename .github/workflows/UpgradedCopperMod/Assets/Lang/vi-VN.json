@@ -144,5 +144,16 @@
   "BearHeadBlock:0": {
     "DisplayName": "Đầu gấu"
     "Description": "Một cái đầu gấu, nhìn kinh quá!"
-}
+},
+  "BlockOfUpgradedCopperBlock:0": {
+    "DisplayName": "Khối đồng nâng cấp"
+    "Description": "Khối đồng nâng cấp, chưa giàu đâu!"
+  },
+  "BlockOfUpgradedIronBlock:0": {
+    "DisplayName": "Khối sắt nâng cấp"
+    "Description": "Khối sắt nâng cấp, chưa giàu đâu!"
+    },
+  "BlockOfDiaroniumBlock:0": {
+    "DisplayName": "Khối diaronium"
+    "Description": "Khối diaronium, giàu rồi đó!"
 }
