@@ -1,8 +1,4 @@
-namespace Game {
-    public class UpgradedCopperModLoader : ModLoader {
-        public override void __ModInitialize() { }
-    }
-}
+
     using System;
 using Engine;
 using GameEntitySystem;
@@ -42,6 +38,9 @@ namespace Game
             int value = Terrain.MakeBlockValue(BlocksManager.GetBlockIndex(typeof(BearHeadBlock), true));
             pickables.AddPickable(value, 1, body.Position + new Vector3(0f, 0.5f, 0f), Vector3.Zero, null);
         }
+    }
+    public class UpgradedCopperModLoader : ModLoader {
+        public override void __ModInitialize() { }
     }
 }
 
