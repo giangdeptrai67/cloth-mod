@@ -107,7 +107,7 @@ namespace Game {
                 false, false, false, false, Color.White);
         }
 
-        m_texture = ContentManager.Get<Texture2D>("Textures/Creature/bearheadtexture.png");
+        m_texture = ContentManager.Get<Texture2D>("Textures/Creature/bearheadtexture");
         base.Initialize();
     }
 
