@@ -2,7 +2,7 @@ using Engine;
 using Engine.Graphics;
 
 namespace Game {
-public class BlockOfUpgradedCopperBlock : Block {
+public class BlockOfUpgradedCopperBlock : CubeBlock {
         public Texture2D m_texture;
 
         public BlockOfUpgradedCopperBlock() : base(1) { }
@@ -14,7 +14,7 @@ public class BlockOfUpgradedCopperBlock : Block {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
 }
-public class BlockOfUpgradedIronBlock : Block {
+public class BlockOfUpgradedIronBlock : CubeBlock {
         public Texture2D m_texture;
 
         public BlockOfUpgradedIronBlock() : base(3) { }
@@ -26,7 +26,7 @@ public class BlockOfUpgradedIronBlock : Block {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
 }
-public class BlockOfDiaroniumBlock : Block {
+public class BlockOfDiaroniumBlock : CubeBlock {
         public Texture2D m_texture;
 
         public BlockOfDiaroniumBlock() : base(2) { }
