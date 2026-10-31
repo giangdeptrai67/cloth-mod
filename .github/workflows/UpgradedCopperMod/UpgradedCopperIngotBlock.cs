@@ -98,7 +98,7 @@ namespace Game {
             boneTransform * Matrix.CreateTranslation(0.5f, 0.5f, 0.5f),
             false, false, false, false, Color.White);
 
-        m_texture = ContentManager.Get<Texture2D>("Textures/BearHead");
+        m_texture = ContentManager.Get<Texture2D>("Textures/Creature/BearHead");
         base.Initialize();
     }
 
