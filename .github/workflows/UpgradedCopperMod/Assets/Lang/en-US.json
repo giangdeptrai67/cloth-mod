@@ -103,6 +103,9 @@
     "UpgradedDiaroniumHammerBlock:0": {
       "DisplayName": "Upgraded Diaronium Hammer",
       "Description": "A hammer made from diaronium."
-    }
+    },
+    "BearHeadBlock:0": {
+      "DisplayName": "Bear head",
+      "Description": "A bear head, ewwww."
   }
 }
