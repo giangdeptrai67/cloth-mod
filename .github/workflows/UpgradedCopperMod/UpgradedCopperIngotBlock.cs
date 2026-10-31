@@ -112,7 +112,17 @@ namespace Game {
     }
 
     public override BlockPlacementData GetPlacementValue(SubsystemTerrain subsystemTerrain,
-        ComponentMiner componentMiner, int value, TerrainRaycastResult raycastResult)
+    ComponentMiner componentMiner, int value, TerrainRaycastResult raycastResult)
+{
+    Vector3 forward = Matrix.CreateFromQuaternion(
+        componentMiner.ComponentCreature.ComponentCreatureModel.EyeRotation).Forward;
+    int rotation = ((int)System.Math.Round(MathUtils.Atan2(forward.X, forward.Z) / (MathUtils.PI / 2f)) + RotationOffset) & 3;
+
+    BlockPlacementData result = new BlockPlacementData();
+    result.Value = Terrain.ReplaceData(Terrain.ReplaceContents(0, BlockIndex), rotation);
+    result.CellFace = raycastResult.CellFace;
+    return result;
+}
     {
         Vector3 forward = Matrix.CreateFromQuaternion(
             componentMiner.ComponentCreature.ComponentCreatureModel.EyeRotation).Forward;
