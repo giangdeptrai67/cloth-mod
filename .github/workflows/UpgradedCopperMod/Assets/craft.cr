@@ -132,4 +132,28 @@
 <Recipe Result="UpgradedDiaroniumHammerBlock" ResultCount="1" RequiredHeatLevel="2" a="diaronium" b="upironhammer" Description="Upgrade iron Hammer to diaronium hammer">
     "ab"
 </Recipe>
+<Recipe Result="BlockOfUpgradedCopperBlock" ResultCount="1" RequiredHeatLevel="0" a="upgradedcopperingot" Description="crafts this block from 9 Upgraded copper ingot">
+"aaa"
+"aaa"
+"aaa"
+</Recipe>
+<Recipe Result="BlockOfUpgradedIronBlock" ResultCount="1" RequiredHeatLevel="0" a="upgradedironingot" Description="crafts this block from 9 Upgraded iron ingot">
+    "aaa"
+"aaa"
+"aaa"
+</Recipe>
+<Recipe Result="BlockOfDiaroniumBlock" ResultCount="1" RequiredHeatLevel="0" a="diaronium" Description="crafts this block from 9 diaronium ingot">
+    "aaa"
+"aaa"
+"aaa"
+</Recipe>
+<Recipe Result="DiaroniumIngotBlock" ResultCount="9" RequiredHeatLevel="0" a="blockofdiaronium" Description="seems like someone regret doing that!">
+    "a"
+ </Recipe>
+<Recipe Result="UpgradedCopperIngotBlock" ResultCount="9" RequiredHeatLevel="0" a="blockofupgradedcopper" Description="Upgraded copper is better than copper">
+    "a"
+ </Recipe>
+<Recipe Result="UpgradedIronIngotBlock" ResultCount="9" RequiredHeatLevel="0" a="blockofupgradediron" Description="Upgraded iron is better than iron">
+    "a"
+ </Recipe>
 </Mod>
