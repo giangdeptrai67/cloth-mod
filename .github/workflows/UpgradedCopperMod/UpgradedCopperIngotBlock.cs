@@ -78,18 +78,35 @@ namespace Game {
 
         public override Texture2D GetDefaultTexture(int value) => m_texture;
     }
-    public class BearHeadBlock : Block {
+    public class BearHeadBlock : Block
+{
     private BlockMesh m_standaloneBlockMesh = new BlockMesh();
+    private BlockMesh m_blockMesh = new BlockMesh();
     private Texture2D m_texture;
 
     public override void Initialize()
     {
         Model model = ContentManager.Get<Model>("Models/BearHead");
-        Matrix boneTransform = BlockMesh.GetBoneAbsoluteTransform(model.FindMesh("BearHead").ParentBone);
+        ModelMesh mesh = model.FindMesh("BearHead");
+        Matrix boneTransform = BlockMesh.GetBoneAbsoluteTransform(mesh.ParentBone);
+        
         m_standaloneBlockMesh.AppendModelMeshPart(
-            model.FindMesh("BearHead").MeshParts[0], boneTransform, false, false, false, false, Color.White);
-        m_texture = ContentManager.Get<Texture2D>("Textures/Creature/bearhead");
+            mesh.MeshParts[0], boneTransform, false, false, false, false, Color.White);
+
+        m_blockMesh.AppendModelMeshPart(
+            mesh.MeshParts[0],
+            boneTransform * Matrix.CreateTranslation(0.5f, 0.5f, 0.5f),
+            false, false, false, false, Color.White);
+
+        m_texture = ContentManager.Get<Texture2D>("Textures/BearHead");
         base.Initialize();
+    }
+
+    public override void GenerateTerrainVertices(BlockGeometryGenerator generator,
+        TerrainGeometry geometry, int value, int x, int y, int z)
+    {
+        generator.GenerateMeshVertices(this, x, y, z, m_blockMesh, Color.White, null,
+            geometry.GetGeometry(m_texture).SubsetOpaque);
     }
 
     public override void DrawBlock(PrimitivesRenderer3D primitivesRenderer, int value, Color color,
@@ -98,9 +115,6 @@ namespace Game {
         BlocksManager.DrawMeshBlock(primitivesRenderer, m_standaloneBlockMesh, m_texture,
             color, size, ref matrix, environmentData);
     }
-
-    public override void GenerateTerrainVertices(BlockGeometryGenerator generator, TerrainGeometry geometry,
-        int value, int x, int y, int z) { }
 }
 }
 
