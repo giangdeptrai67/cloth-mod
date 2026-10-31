@@ -107,6 +107,17 @@
     "BearHeadBlock:0": {
       "DisplayName": "Bear head",
       "Description": "A bear head, ewwww."
-  }
+  },
+  "BlockOfUpgradedCopperBlock:0": {
+    "DisplayName": "Upgraded copper block"
+    "Description": "Upgraded copper block, not rich yet!"
+  },
+  "BlockOfUpgradedIronBlock:0": {
+    "DisplayName": "Upgraded iron block"
+    "Description": "Upgraded iron block, not rich yet!"
+    },
+  "BlockOfDiaroniumBlock:0": {
+    "DisplayName": "Diaronium block"
+    "Description": "Diaronium block, your now rich!"
 }
 }
