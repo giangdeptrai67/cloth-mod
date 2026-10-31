@@ -86,7 +86,7 @@ namespace Game {
 
     public override void Initialize()
     {
-        Model model = ContentManager.Get<Model>("Models/bearheadtexture");
+        Model model = ContentManager.Get<Model>("Models/BearHead");
         ModelMesh mesh = model.FindMesh("BearHead");
         Matrix boneTransform = BlockMesh.GetBoneAbsoluteTransform(mesh.ParentBone);
         
@@ -98,7 +98,7 @@ namespace Game {
             boneTransform * Matrix.CreateTranslation(0.5f, 0.5f, 0.5f),
             false, false, false, false, Color.White);
 
-        m_texture = ContentManager.Get<Texture2D>("Textures/Creature/BearHead");
+        m_texture = ContentManager.Get<Texture2D>("Textures/Creature/bearheadtexture");
         base.Initialize();
     }
 
