@@ -88,7 +88,7 @@ namespace Game {
         Matrix boneTransform = BlockMesh.GetBoneAbsoluteTransform(model.FindMesh("BearHead").ParentBone);
         m_standaloneBlockMesh.AppendModelMeshPart(
             model.FindMesh("BearHead").MeshParts[0], boneTransform, false, false, false, false, Color.White);
-        m_texture = ContentManager.Get<Texture2D>("Textures/BearHead");
+        m_texture = ContentManager.Get<Texture2D>("Textures/Creature/bearhead");
         base.Initialize();
     }
 
