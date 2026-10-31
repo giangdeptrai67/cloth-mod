@@ -140,5 +140,8 @@
   "UpgradedDiaroniumHammerBlock:0": {
     "DisplayName": "Búa Diaronium nâng cấp",
     "Description": "Búa được chế tạo từ Diaronium."
-  }
+  },
+  "BearHeadBlock:0": {
+    "DisplayName": "Đầu gấu"
+    "Description": "Một cái đầu gấu, nhìn kinh quá!"
 }
