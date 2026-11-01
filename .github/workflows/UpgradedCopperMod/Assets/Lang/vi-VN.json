@@ -142,18 +142,18 @@
     "Description": "Búa được chế tạo từ Diaronium."
   },
   "BearHeadBlock:0": {
-    "DisplayName": "Đầu gấu"
+    "DisplayName": "Đầu gấu",
     "Description": "Một cái đầu gấu, nhìn kinh quá!"
 },
   "BlockOfUpgradedCopperBlock:0": {
-    "DisplayName": "Khối đồng nâng cấp"
+    "DisplayName": "Khối đồng nâng cấp",
     "Description": "Khối đồng nâng cấp, chưa giàu đâu!"
   },
   "BlockOfUpgradedIronBlock:0": {
-    "DisplayName": "Khối sắt nâng cấp"
+    "DisplayName": "Khối sắt nâng cấp",
     "Description": "Khối sắt nâng cấp, chưa giàu đâu!"
     },
   "BlockOfDiaroniumBlock:0": {
-    "DisplayName": "Khối diaronium"
+    "DisplayName": "Khối diaronium",
     "Description": "Khối diaronium, giàu rồi đó!"
 }
