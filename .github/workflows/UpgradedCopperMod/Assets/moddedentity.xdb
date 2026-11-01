@@ -10,7 +10,7 @@
             <Parameter Name="AttackPower" Guid="f942d6a6-e7b6-491b-ad6d-ab2cb4bd2330" Value="20" Type="float" />
           </MemberComponentTemplate>
           <MemberComponentTemplate Name="Body" Guid="7cd0854a-ed0d-485d-9d25-07bd6b06f204">
-            <Parameter Name="BoxSize" Guid="f2cc3b38-0677-48b9-9b25-f15466403de1" Value="2.5,2,2.5" Type="Vector3" />
+            <Parameter Name="BoxSize" Guid="f2cc3b38-0677-48b9-9b25-f15466403de1" Value="1.8,2.4,1.8" Type="Vector3" />
             <Parameter Name="Mass" Guid="b372238a-c960-405d-b545-17ab39e045d1" Value="800" Type="float" />
 <Parameter Name="MaxSmoothRiseHeight" Guid="c7913606-0339-4880-a3e3-0dee49ff1c23" Value="1.1" Type="float" />
           </MemberComponentTemplate>
