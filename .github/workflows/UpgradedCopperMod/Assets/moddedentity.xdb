@@ -12,9 +12,11 @@
           <MemberComponentTemplate Name="Body" Guid="7cd0854a-ed0d-485d-9d25-07bd6b06f204">
             <Parameter Name="BoxSize" Guid="f2cc3b38-0677-48b9-9b25-f15466403de1" Value="2.5,2,2.5" Type="Vector3" />
             <Parameter Name="Mass" Guid="b372238a-c960-405d-b545-17ab39e045d1" Value="800" Type="float" />
+<Parameter Name="MaxSmoothRiseHeight" Guid="c7913606-0339-4880-a3e3-0dee49ff1c23" Value="1.1" Type="float" />
           </MemberComponentTemplate>
           <MemberComponentTemplate Name="Locomotion" Guid="ea9057cf-a789-4a7e-9a17-987fb5cf1e38">
             <Parameter Name="WalkSpeed" Guid="c681283e-7b00-40d4-936e-59c37fd8c942" Value="9" Type="float" />
+<Parameter Name="JumpSpeed" Guid="4720ebab-e795-4660-940b-7ba07a723ca4" Value="6" Type="float" />
           </MemberComponentTemplate>
           <MemberComponentTemplate Name="Spawn" Guid="14ac9c65-4ad3-45f7-93aa-06605ccf829e">
             <Parameter Name="AutoDespawn" Guid="dda9c32f-9dea-42b7-9bff-e718c872bc8a" Value="False" Type="bool" />
