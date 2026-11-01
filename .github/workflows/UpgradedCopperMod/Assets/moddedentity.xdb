@@ -26,6 +26,13 @@
           <MemberComponentTemplate Name="FourLeggedModel" Guid="">
   <Parameter Name="TextureOverride" Guid="" Value="Texture/Creature/fatherbear" Type="string" />
 </MemberComponentTemplate>
+<ParameterSet Name="CreatureEggData" Guid="00682ce8-87c0-4728-801d-d13d8e555871">
+  <Parameter Name="Color" Guid="ace073f9-9225-4884-a5e4-c8ed5925c816" Value="120,20,20" Type="Color" />
+  <Parameter Name="SwapUV" Guid="c924548d-aa39-4a6c-98e5-c728973c435b" Value="True" Type="bool" />
+  <Parameter Name="DisplayName" Guid="0c12e633-cb12-4377-ac0a-53c9f5ed64fc" Value="Father Bear" Type="string" />
+  <Parameter Name="TextureSlot" Guid="34a79e6e-f25e-4641-9284-761bfbf10b2a" Value="163" Type="int" />
+  <Parameter Name="EggTypeIndex" Guid="a6ead80a-c8b9-471a-944a-7c59f4a6b79f" Value="50" Type="int" />
+</ParameterSet>
         </EntityTemplate>
       </Folder>
     </Folder>
