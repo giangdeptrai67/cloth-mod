@@ -10,11 +10,11 @@
             <Parameter Name="AttackPower" Guid="f942d6a6-e7b6-491b-ad6d-ab2cb4bd2330" Value="20" Type="float" />
           </MemberComponentTemplate>
           <MemberComponentTemplate Name="Body" Guid="7cd0854a-ed0d-485d-9d25-07bd6b06f204">
-            <Parameter Name="BoxSize" Guid="f2cc3b38-0677-48b9-9b25-f15466403de1" Value="1.8,2.4,1.8" Type="Vector3" />
+            <Parameter Name="BoxSize" Guid="f2cc3b38-0677-48b9-9b25-f15466403de1" Value="2.5,2,2.5" Type="Vector3" />
             <Parameter Name="Mass" Guid="b372238a-c960-405d-b545-17ab39e045d1" Value="800" Type="float" />
           </MemberComponentTemplate>
           <MemberComponentTemplate Name="Locomotion" Guid="ea9057cf-a789-4a7e-9a17-987fb5cf1e38">
-            <Parameter Name="WalkSpeed" Guid="c681283e-7b00-40d4-936e-59c37fd8c942" Value="10" Type="float" />
+            <Parameter Name="WalkSpeed" Guid="c681283e-7b00-40d4-936e-59c37fd8c942" Value="9" Type="float" />
           </MemberComponentTemplate>
           <MemberComponentTemplate Name="Spawn" Guid="14ac9c65-4ad3-45f7-93aa-06605ccf829e">
             <Parameter Name="AutoDespawn" Guid="dda9c32f-9dea-42b7-9bff-e718c872bc8a" Value="False" Type="bool" />
@@ -26,6 +26,7 @@
           <MemberComponentTemplate Name="FourLeggedModel" Guid="">
   <Parameter Name="TextureOverride" Guid="" Value="Textures/Creature/fatherbear" Type="string" />
 </MemberComponentTemplate>
+<Parameter Name="ModelName" Guid="47324c08-1fba-49d7-8123-e48843b7495a" Value="Models/FatherBear" Type="string" />
 <ParameterSet Name="CreatureEggData" Guid="00682ce8-87c0-4728-801d-d13d8e555871">
   <Parameter Name="Color" Guid="ace073f9-9225-4884-a5e4-c8ed5925c816" Value="120,20,20" Type="Color" />
   <Parameter Name="SwapUV" Guid="c924548d-aa39-4a6c-98e5-c728973c435b" Value="True" Type="bool" />
