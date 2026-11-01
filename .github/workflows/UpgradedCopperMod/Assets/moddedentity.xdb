@@ -1,0 +1,30 @@
+<Database>
+  <Folder Name="Entities" Guid="5fcdf35f-7001-442c-883e-e0502b15d291">
+    <Folder Name="Creatures" Guid="beb2de3c-1a77-4950-b74f-9dd470f751fe">
+      <Folder Name="Abstract" Guid="662d69f8-483c-4271-966b-da9cbb4f5042">
+        <EntityTemplate Name="FatherBear" Guid="537682fb-bfc0-4748-b01d-b61ad959aa83" InheritanceParent="437e6af3-ea9f-4f3c-8b96-d81de6223831">
+          <MemberComponentTemplate Name="Health" Guid="1d745775-0ee3-4a1e-b0db-4f3357a4c9b0">
+            <Parameter Name="AttackResilience" Guid="7d690968-5232-4da1-8a37-f2c9d1001d9c" Value="500" Type="float" />
+          </MemberComponentTemplate>
+          <MemberComponentTemplate Name="Miner" Guid="0e0a219b-cc8e-4c71-91b4-d3ac800c4cfa">
+            <Parameter Name="AttackPower" Guid="f942d6a6-e7b6-491b-ad6d-ab2cb4bd2330" Value="7" Type="float" />
+          </MemberComponentTemplate>
+          <MemberComponentTemplate Name="Body" Guid="7cd0854a-ed0d-485d-9d25-07bd6b06f204">
+            <Parameter Name="BoxSize" Guid="f2cc3b38-0677-48b9-9b25-f15466403de1" Value="1.8,2.4,1.8" Type="Vector3" />
+            <Parameter Name="Mass" Guid="b372238a-c960-405d-b545-17ab39e045d1" Value="800" Type="float" />
+          </MemberComponentTemplate>
+          <MemberComponentTemplate Name="Locomotion" Guid="ea9057cf-a789-4a7e-9a17-987fb5cf1e38">
+            <Parameter Name="WalkSpeed" Guid="c681283e-7b00-40d4-936e-59c37fd8c942" Value="6" Type="float" />
+          </MemberComponentTemplate>
+          <MemberComponentTemplate Name="Spawn" Guid="14ac9c65-4ad3-45f7-93aa-06605ccf829e">
+            <Parameter Name="AutoDespawn" Guid="dda9c32f-9dea-42b7-9bff-e718c872bc8a" Value="False" Type="bool" />
+          </MemberComponentTemplate>
+          <MemberComponentTemplate Name="Creature" Guid="ab7ef4e8-0ec5-4ca7-96d8-eff3a7f6df2d">
+            <Parameter Name="DisplayName" Guid="5cb63d26-268e-4c16-84dd-c011a97e3164" Value="Father Bear" Type="string" />
+            <Parameter Name="Description" Guid="0b028993-8c85-404e-b55c-62bf2643bc85" Value="A huge, enraged bear that answers the call of its cub." Type="string" />
+          </MemberComponentTemplate>
+        </EntityTemplate>
+      </Folder>
+    </Folder>
+  </Folder>
+</Database>
