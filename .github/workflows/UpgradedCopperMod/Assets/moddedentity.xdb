@@ -24,10 +24,8 @@
             <Parameter Name="Description" Guid="0b028993-8c85-404e-b55c-62bf2643bc85" Value="A huge, enraged bear that answers the call of its cub." Type="string" />
           </MemberComponentTemplate>
           <MemberComponentTemplate Name="FourLeggedModel" Guid="cdf70601-774f-41ae-ad20-ee36383f055f">
-  <Parameter Name="TextureOverride" Guid="" Value="Textures/Creature/fatherbear" Type="string" />
-</MemberComponentTemplate>
-<MemberComponentTemplate Name="FourLeggedModel" Guid="c2386918-6edd-49c7-9fbb-66faa9a8df34">
-<Parameter Name="ModelName" Guid="47324c08-1fba-49d7-8123-e48843b7495a" Value="Models/FatherBear" Type="string" />
+  <Parameter Name="TextureOverride" Guid="fa897e09-f327-440c-8959-bbf89bc446f3" Value="Textures/Creature/fatherbear" Type="string" />
+  <Parameter Name="ModelName" Guid="47324c08-1fba-49d7-8123-e48843b7495a" Value="Models/FatherBear" Type="string" />
 </MemberComponentTemplate>
 <ParameterSet Name="CreatureEggData" Guid="00682ce8-87c0-4728-801d-d13d8e555871">
   <Parameter Name="Color" Guid="ace073f9-9225-4884-a5e4-c8ed5925c816" Value="120,20,20" Type="Color" />
