@@ -45,6 +45,16 @@ namespace Game
             Game.Random random = new Game.Random();
             float angle = random.Float(0f, MathUtils.PI * 2f);
             float distance = random.Float(10f, 30f);
+            // Play the bear roar where the bear appeared
+SubsystemAudio audio = Project.FindSubsystem<SubsystemAudio>(true);
+audio.PlaySound(
+    "Audio/Creatures/BearAngry",
+    1f,
+    -0.4f,
+    bear.FindComponent<ComponentBody>(true).Position,
+    40f,
+    true
+);
 
             // Turn that into a spot on the map
             int x = Terrain.ToCell(playerPosition.X + MathUtils.Cos(angle) * distance);
@@ -70,6 +80,7 @@ namespace Game
             Project.AddEntity(bear);
 
             return true;
+            
         }
     }
 }
