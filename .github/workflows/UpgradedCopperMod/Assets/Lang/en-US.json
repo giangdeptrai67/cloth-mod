@@ -119,6 +119,9 @@
   "BlockOfDiaroniumBlock:0": {
     "DisplayName": "Diaronium block",
     "Description": "Diaronium block, your now rich!"
-}
+},
+    "BearCallWhistleBlock:0": {
+      "DisplayName": "Bear calling whistle",
+      "Description": "A bear head with a whistle attached inside"
 }
 }
