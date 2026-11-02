@@ -1,0 +1,9 @@
+<Database>
+  <Folder Name="Components" Guid="766da18a-636a-4a88-803c-4462aed106f3">
+    <Folder Name="AI" Guid="33dfd132-3c41-4dfa-a385-af3ba34ff86b">
+      <ComponentTemplate Name="BossDigger" Guid="2a731435-d477-4848-8234-6e6753e7afc6" InheritanceParent="b05700ed-7e4e-4679-98f5-b597f421496b">
+        <Parameter Name="Class" Guid="f3723578-3bd1-485c-8431-8cc44afb7c5c" Value="Game.ComponentBossDigger" Type="string" />
+      </ComponentTemplate>
+    </Folder>
+  </Folder>
+</Database>
