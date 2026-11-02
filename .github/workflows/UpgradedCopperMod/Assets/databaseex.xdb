@@ -1,0 +1,14 @@
+<Database>
+  <Folder Name="Subsystems" Guid="75acb50b-fb75-4c85-af38-a0fb51a9eb90">
+    <Folder Name="BlockBehaviors" Guid="00c97f0f-731e-481c-9909-eae9cc5ee940">
+      <SubsystemTemplate Name="BearCallWhistleBehavior" Guid="0c711896-2842-4404-ae66-d1a0d0663bc7" InheritanceParent="fefb9590-4972-4893-b02a-76063611b745">
+        <Parameter Name="Class" Guid="9cb3140d-f952-4a86-9d5e-6c230c4a281c" Value="Game.SubsystemBearCallWhistleBehavior" Type="string" />
+      </SubsystemTemplate>
+    </Folder>
+  </Folder>
+  <Folder Name="Abstract" Guid="c6ba6a30-5042-4d3d-9bea-199cd4acc3fa">
+    <ProjectTemplate Name="Project" Guid="85023bf8-1c90-4dd1-9442-e6c13691d078">
+      <MemberSubsystemTemplate Name="BearCallWhistleBehavior" Guid="ff85c87c-147b-4a40-9912-e63e1b715292" InheritanceParent="0c711896-2842-4404-ae66-d1a0d0663bc7" />
+    </ProjectTemplate>
+  </Folder>
+</Database>
