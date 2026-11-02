@@ -6,7 +6,7 @@
           <MemberComponentTemplate Name="Health" Guid="1d745775-0ee3-4a1e-b0db-4f3357a4c9b0">
             <Parameter Name="AttackResilience" Guid="7d690968-5232-4da1-8a37-f2c9d1001d9c" Value="620" Type="float" />
           <Parameter Name="FallResilience" Guid="93d8076c-71d0-494e-81e5-12ded7351b0c" Value="20" Type="float" />
-          
+          <MemberComponentTemplate Name="BossDigger" Guid="13a3ad7b-6038-4438-b05b-f8c58a3eefe2" InheritanceParent="2a731435-d477-4848-8234-6e6753e7afc6" />
 </MemberComponentTemplate>
           <MemberComponentTemplate Name="Miner" Guid="0e0a219b-cc8e-4c71-91b4-d3ac800c4cfa">
             <Parameter Name="AttackPower" Guid="f942d6a6-e7b6-491b-ad6d-ab2cb4bd2330" Value="30" Type="float" />
