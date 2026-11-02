@@ -13,7 +13,7 @@ namespace Game
         public override bool OnUse(Ray3 ray, ComponentMiner componentMiner)
         {
             if (componentMiner.ComponentPlayer != null)
-                componentMiner.ComponentPlayer.ComponentGui.DisplayLargeMessage("TEST", "it works", 3f, 0f);
+                componentMiner.ComponentPlayer.ComponentGui.DisplayLargeMessage("WARNING", "an unknown entity has been called", 3f, 0f);
             return true;
         }
     }
