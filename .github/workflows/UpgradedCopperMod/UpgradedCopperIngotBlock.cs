@@ -147,6 +147,34 @@ namespace Game {
             color, size, ref matrix, environmentData);
     }
 }
+public class BearCallWhistleBlock : Block
+{
+    private BlockMesh m_standaloneBlockMesh = new BlockMesh();
+    private Texture2D m_texture;
+
+    public override void Initialize()
+    {
+        Model model = ContentManager.Get<Model>("Models/BearHead");
+        ModelMesh mesh = model.FindMesh("BearHead");
+        Matrix boneTransform = BlockMesh.GetBoneAbsoluteTransform(mesh.ParentBone);
+
+        m_standaloneBlockMesh.AppendModelMeshPart(
+            mesh.MeshParts[0], boneTransform, false, false, false, false, Color.White);
+
+        m_texture = ContentManager.Get<Texture2D>("Textures/Block/bearwhistletexture");
+        base.Initialize();
+    }
+
+    public override void GenerateTerrainVertices(BlockGeometryGenerator generator,
+        TerrainGeometry geometry, int value, int x, int y, int z) { }
+
+    public override void DrawBlock(PrimitivesRenderer3D primitivesRenderer, int value, Color color,
+        float size, ref Matrix matrix, DrawBlockEnvironmentData environmentData)
+    {
+        BlocksManager.DrawMeshBlock(primitivesRenderer, m_standaloneBlockMesh, m_texture,
+            color, size, ref matrix, environmentData);
+    }
+}
 }
 
 
