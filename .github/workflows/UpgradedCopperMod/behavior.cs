@@ -1,6 +1,5 @@
 
 using Engine;
-using Engine;
 using GameEntitySystem;
 
 namespace Game
@@ -19,19 +18,21 @@ namespace Game
         }
 
         public override bool OnUse(Ray3 ray, ComponentMiner componentMiner)
-        foreach (Entity entity in Project.Entities)
-{
-    if (entity.ValuesDictionary.DatabaseObject.Name == "FatherBear")
-    {
-        return false;
-    }
-}
         {
+            // Only one Father Bear at a time
+            foreach (Entity entity in Project.Entities)
+            {
+                if (entity.ValuesDictionary.DatabaseObject.Name == "FatherBear")
+                {
+                    return false;
+                }
+            }
+
             if (componentMiner.ComponentPlayer != null)
             {
                 componentMiner.ComponentPlayer.ComponentGui.DisplayLargeMessage(
                     "WARNING",
-                    "An unknown entity has been summon",
+                    "An unknown entity has been summoned",
                     3f,
                     0f
                 );
@@ -45,16 +46,6 @@ namespace Game
             Game.Random random = new Game.Random();
             float angle = random.Float(0f, MathUtils.PI * 2f);
             float distance = random.Float(10f, 30f);
-            // Play the bear roar where the bear appeared
-SubsystemAudio audio = Project.FindSubsystem<SubsystemAudio>(true);
-audio.PlaySound(
-    "Audio/Creatures/BearAngry",
-    1f,
-    -0.4f,
-    bear.FindComponent<ComponentBody>(true).Position,
-    40f,
-    true
-);
 
             // Turn that into a spot on the map
             int x = Terrain.ToCell(playerPosition.X + MathUtils.Cos(angle) * distance);
@@ -65,7 +56,6 @@ audio.PlaySound(
             int y = terrain.CalculateTopmostCellHeight(x, z) + 1;
 
             // Create Father Bear entity
-            
             Entity bear = DatabaseManager.CreateEntity(
                 Project,
                 "FatherBear",
@@ -79,8 +69,18 @@ audio.PlaySound(
             // Add bear to world
             Project.AddEntity(bear);
 
+            // Play the bear roar where the bear appeared
+            SubsystemAudio audio = Project.FindSubsystem<SubsystemAudio>(true);
+            audio.PlaySound(
+                "Audio/Creatures/BearAngry",
+                1f,
+                -0.4f,
+                bear.FindComponent<ComponentBody>(true).Position,
+                40f,
+                true
+            );
+
             return true;
-            
         }
     }
 }
