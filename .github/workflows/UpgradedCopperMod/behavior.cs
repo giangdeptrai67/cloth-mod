@@ -19,12 +19,19 @@ namespace Game
         }
 
         public override bool OnUse(Ray3 ray, ComponentMiner componentMiner)
+        foreach (Entity entity in Project.Entities)
+{
+    if (entity.ValuesDictionary.DatabaseObject.Name == "FatherBear")
+    {
+        return false;
+    }
+}
         {
             if (componentMiner.ComponentPlayer != null)
             {
                 componentMiner.ComponentPlayer.ComponentGui.DisplayLargeMessage(
                     "WARNING",
-                    "An unknown entity has been called",
+                    "An unknown entity has been summon",
                     3f,
                     0f
                 );
@@ -48,6 +55,7 @@ namespace Game
             int y = terrain.CalculateTopmostCellHeight(x, z) + 1;
 
             // Create Father Bear entity
+            
             Entity bear = DatabaseManager.CreateEntity(
                 Project,
                 "FatherBear",
