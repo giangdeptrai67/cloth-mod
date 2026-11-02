@@ -16,7 +16,7 @@ namespace Game
                 componentMiner.ComponentPlayer.ComponentGui.DisplayLargeMessage("WARNING", "an unknown entity has been called", 3f, 0f);
             return true;
         }
-    }
+    
     public override bool OnUse(Ray3 ray, ComponentMiner componentMiner)
 {
     // 1. Where is the player? Save it in a box named playerPosition.
@@ -33,4 +33,5 @@ namespace Game
 
     return true;
     }
+}
 }
