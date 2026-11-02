@@ -8,6 +8,9 @@
           <Parameter Name="FallResilience" Guid="93d8076c-71d0-494e-81e5-12ded7351b0c" Value="20" Type="float" />
           <MemberComponentTemplate Name="BossDigger" Guid="13a3ad7b-6038-4438-b05b-f8c58a3eefe2" InheritanceParent="2a731435-d477-4848-8234-6e6753e7afc6" />
 </MemberComponentTemplate>
+<MemberComponentTemplate Name="RunAwayBehavior" Guid="472b01ee-76b7-4ff4-94c9-3c07eb828e1d">
+  <Parameter Name="Class" Guid="84ed7bb1-d1a1-417d-b84d-5052565987ed" Value="Game.ComponentNoRunAway" Type="string" />
+</MemberComponentTemplate>
           <MemberComponentTemplate Name="Miner" Guid="0e0a219b-cc8e-4c71-91b4-d3ac800c4cfa">
             <Parameter Name="AttackPower" Guid="f942d6a6-e7b6-491b-ad6d-ab2cb4bd2330" Value="30" Type="float" />
           </MemberComponentTemplate>
