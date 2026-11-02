@@ -5,7 +5,9 @@
         <EntityTemplate Name="FatherBear" Guid="537682fb-bfc0-4748-b01d-b61ad959aa83" InheritanceParent="437e6af3-ea9f-4f3c-8b96-d81de6223831">
           <MemberComponentTemplate Name="Health" Guid="1d745775-0ee3-4a1e-b0db-4f3357a4c9b0">
             <Parameter Name="AttackResilience" Guid="7d690968-5232-4da1-8a37-f2c9d1001d9c" Value="500" Type="float" />
-          </MemberComponentTemplate>
+          <Parameter Name="FallResilience" Guid="93d8076c-71d0-494e-81e5-12ded7351b0c" Value="20" Type="float" />
+          
+</MemberComponentTemplate>
           <MemberComponentTemplate Name="Miner" Guid="0e0a219b-cc8e-4c71-91b4-d3ac800c4cfa">
             <Parameter Name="AttackPower" Guid="f942d6a6-e7b6-491b-ad6d-ab2cb4bd2330" Value="20" Type="float" />
           </MemberComponentTemplate>
