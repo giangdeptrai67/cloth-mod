@@ -16,6 +16,8 @@ namespace Game
                 componentMiner.ComponentPlayer.ComponentGui.DisplayLargeMessage("WARNING", "an unknown entity has been called", 3f, 0f);
             return true;
         }
+
+    }
     
     public override bool OnUse(Ray3 ray, ComponentMiner componentMiner)
 {
@@ -34,4 +36,4 @@ namespace Game
     return true;
     }
 }
-}
+
