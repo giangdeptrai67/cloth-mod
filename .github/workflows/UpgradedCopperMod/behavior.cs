@@ -1,5 +1,6 @@
 
 using Engine;
+using Engine;
 using GameEntitySystem;
 
 namespace Game
@@ -33,6 +34,19 @@ namespace Game
             Vector3 playerPosition =
                 componentMiner.ComponentCreature.ComponentBody.Position;
 
+            // Random direction and distance (10 to 30 blocks)
+            Game.Random random = new Game.Random();
+            float angle = random.Float(0f, MathUtils.PI * 2f);
+            float distance = random.Float(10f, 30f);
+
+            // Turn that into a spot on the map
+            int x = Terrain.ToCell(playerPosition.X + MathUtils.Cos(angle) * distance);
+            int z = Terrain.ToCell(playerPosition.Z + MathUtils.Sin(angle) * distance);
+
+            // Find the ground height at that spot
+            Terrain terrain = Project.FindSubsystem<SubsystemTerrain>(true).Terrain;
+            int y = terrain.CalculateTopmostCellHeight(x, z) + 1;
+
             // Create Father Bear entity
             Entity bear = DatabaseManager.CreateEntity(
                 Project,
@@ -40,9 +54,9 @@ namespace Game
                 true
             );
 
-            // Set bear position
+            // Set bear position (middle of the block)
             bear.FindComponent<ComponentBody>(true).Position =
-                playerPosition + new Vector3(3f, 0f, 0f);
+                new Vector3(x + 0.5f, y, z + 0.5f);
 
             // Add bear to world
             Project.AddEntity(bear);
