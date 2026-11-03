@@ -43,6 +43,11 @@
   <Parameter Name="EggTypeIndex" Guid="a6ead80a-c8b9-471a-944a-7c59f4a6b79f" Value="50" Type="int" />
 </ParameterSet>
         </EntityTemplate>
+<MemberComponentTemplate Name="HumanModel" Guid="1a781c6f-115f-435a-b0a2-716ccc67cba9" InheritanceParent="0566662e-bb24-45f9-84d8-f3c1e5d083df">
+  <Parameter Name="ModelName" Guid="eeef108f-cfa7-4a1b-8fcf-14c80556e846" Value="Models/HumanMale" Type="string" />
+  <Parameter Name="TextureOverride" Guid="e4485e8a-5591-4410-afdb-bf752abc398e" Value="Textures/Creatures/YourFriend" Type="string" />
+</MemberComponentTemplate>
+    
       </Folder>
     </Folder>
   </Folder>
