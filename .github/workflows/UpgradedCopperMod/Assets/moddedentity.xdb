@@ -42,7 +42,7 @@
   <Parameter Name="TextureSlot" Guid="34a79e6e-f25e-4641-9284-761bfbf10b2a" Value="163" Type="int" />
   <Parameter Name="EggTypeIndex" Guid="a6ead80a-c8b9-471a-944a-7c59f4a6b79f" Value="50" Type="int" />
 </ParameterSet>
-        </EntityTemplate>
+        
 <EntityTemplate Name="IsMeWassap" Guid="bd14626c-c831-4cbc-bbdc-5e24d9a84bfa" InheritanceParent="e4275171-a39f-413f-8888-4c472868364d">
   <MemberComponentTemplate Name="Creature" Guid="858b41c8-d822-4e45-97ab-6cbfabfe0585">
     <Parameter Name="DisplayName" Guid="13907646-f28b-4508-ba1d-0484d799068c" Value="Is Me Wassap" Type="string" />
@@ -78,7 +78,8 @@
   <Parameter Name="TextureSlot" Guid="bd425347-15d4-47e9-8d28-1585dcc95c2f" Value="163" Type="int" />
   <Parameter Name="EggTypeIndex" Guid="3bc49419-a523-4de2-bfcc-dde6548b35a6" Value="51" Type="int" />
 </ParameterSet>
-    
+
+    </EntityTemplate>
       </Folder>
     </Folder>
   </Folder>
