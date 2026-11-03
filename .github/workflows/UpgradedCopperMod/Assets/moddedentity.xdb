@@ -62,8 +62,8 @@
   <Parameter Name="AttackPower" Guid="6bfe2045-e2ae-4a23-a4ea-49bb65cdadf7" Value="15" Type="float" />
 </MemberComponentTemplate>
 
-<MemberComponentTemplate Name="Body" Guid="">
-  <Parameter Name="CanCrouch" Guid="" Value="True" Type="bool" />
+<MemberComponentTemplate Name="Body" Guid="47944b5b-3f02-4c74-8e26-509a317d4805">
+  <Parameter Name="CanCrouch" Guid="e5609915-9404-4664-a99b-bffe28f45b6a" Value="True" Type="bool" />
 </MemberComponentTemplate>
 
 <MemberComponentTemplate Name="HumanModel" Guid="1a781c6f-115f-435a-b0a2-716ccc67cba9" InheritanceParent="0566662e-bb24-45f9-84d8-f3c1e5d083df">
