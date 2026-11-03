@@ -50,11 +50,12 @@
 
 <MemberComponentTemplate Name="Health" Guid="7583e47e-3454-4c64-9542-54a474a9741e">
   <Parameter Name="AttackResilience" Guid="8a515141-d11c-4fe5-a48d-1240be17c4a7" Value="120" Type="float" />
+<Parameter Name="FallResilience" Guid="0c5efaac-b711-44e9-9954-7b867db13466" Value="15" Type="float" />
 </MemberComponentTemplate>
 
 <MemberComponentTemplate Name="Locomotion" Guid="">
   <Parameter Name="WalkSpeed" Guid="26d00deb-6444-466c-a4a8-ec0df5d2b957" Value="6" Type="float" />
-  <Parameter Name="FallResilience" Guid="0c5efaac-b711-44e9-9954-7b867db13466" Value="15" Type="float" />
+  
 <Parameter Name="JumpSpeed" Guid="2bafcbc4-1e51-441c-8f5a-892be9a449fd" Value="5" Type="float" />
 </MemberComponentTemplate>
 
