@@ -43,10 +43,34 @@
   <Parameter Name="EggTypeIndex" Guid="a6ead80a-c8b9-471a-944a-7c59f4a6b79f" Value="50" Type="int" />
 </ParameterSet>
         </EntityTemplate>
+<EntityTemplate Name="IsMeWassap" Guid="bd14626c-c831-4cbc-bbdc-5e24d9a84bfa" InheritanceParent="e4275171-a39f-413f-8888-4c472868364d">
+  <MemberComponentTemplate Name="Creature" Guid="858b41c8-d822-4e45-97ab-6cbfabfe0585">
+    <Parameter Name="DisplayName" Guid="13907646-f28b-4508-ba1d-0484d799068c" Value="Is Me Wassap" Type="string" />
+  </MemberComponentTemplate>
+
+<MemberComponentTemplate Name="Health" Guid="7583e47e-3454-4c64-9542-54a474a9741e">
+  <Parameter Name="AttackResilience" Guid="8a515141-d11c-4fe5-a48d-1240be17c4a7" Value="120" Type="float" />
+</MemberComponentTemplate>
+
+<MemberComponentTemplate Name="Locomotion" Guid="">
+  <Parameter Name="WalkSpeed" Guid="26d00deb-6444-466c-a4a8-ec0df5d2b957" Value="6" Type="float" />
+  <Parameter Name="FallResilience" Guid="0c5efaac-b711-44e9-9954-7b867db13466" Value="15" Type="float" />
+<Parameter Name="JumpSpeed" Guid="2bafcbc4-1e51-441c-8f5a-892be9a449fd" Value="5" Type="float" />
+</MemberComponentTemplate>
+
+<MemberComponentTemplate Name="Miner" Guid="586aaabd-81e7-4166-95fd-e5e7818363fb">
+  <Parameter Name="AttackPower" Guid="6bfe2045-e2ae-4a23-a4ea-49bb65cdadf7" Value="15" Type="float" />
+</MemberComponentTemplate>
+
+<MemberComponentTemplate Name="Body" Guid="">
+  <Parameter Name="CanCrouch" Guid="" Value="True" Type="bool" />
+</MemberComponentTemplate>
+
 <MemberComponentTemplate Name="HumanModel" Guid="1a781c6f-115f-435a-b0a2-716ccc67cba9" InheritanceParent="0566662e-bb24-45f9-84d8-f3c1e5d083df">
-  <Parameter Name="ModelName" Guid="eeef108f-cfa7-4a1b-8fcf-14c80556e846" Value="Models/HumanMale" Type="string" />
+  <Parameter Name="ModelName" Guid="eeef108f-c7583e47e-3454-4c64-9542-54a474a9741efa7-4a1b-8fcf-14c80556e846" Value="Models/HumanMale" Type="string" />
   <Parameter Name="TextureOverride" Guid="e4485e8a-5591-4410-afdb-bf752abc398e" Value="Textures/Friend/ismewassap" Type="string" />
 </MemberComponentTemplate>
+
 <ParameterSet Name="CreatureEggData" Guid="ef9c16e9-5d1c-4580-bc69-9cf22aba5b8e">
   <Parameter Name="Color" Guid="a42a8f2b-52f3-4769-a8b8-78d688951cc6" Value="0,0,0" Type="Color" />
   <Parameter Name="SwapUV" Guid="fa5ba173-08c4-4997-b6f5-caba7bc736a6" Value="True" Type="bool" />
