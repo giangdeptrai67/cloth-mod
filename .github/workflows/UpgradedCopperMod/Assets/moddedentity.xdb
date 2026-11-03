@@ -45,8 +45,15 @@
         </EntityTemplate>
 <MemberComponentTemplate Name="HumanModel" Guid="1a781c6f-115f-435a-b0a2-716ccc67cba9" InheritanceParent="0566662e-bb24-45f9-84d8-f3c1e5d083df">
   <Parameter Name="ModelName" Guid="eeef108f-cfa7-4a1b-8fcf-14c80556e846" Value="Models/HumanMale" Type="string" />
-  <Parameter Name="TextureOverride" Guid="e4485e8a-5591-4410-afdb-bf752abc398e" Value="Textures/Creatures/YourFriend" Type="string" />
+  <Parameter Name="TextureOverride" Guid="e4485e8a-5591-4410-afdb-bf752abc398e" Value="Textures/Friend/ismewassap" Type="string" />
 </MemberComponentTemplate>
+<ParameterSet Name="CreatureEggData" Guid="ef9c16e9-5d1c-4580-bc69-9cf22aba5b8e">
+  <Parameter Name="Color" Guid="a42a8f2b-52f3-4769-a8b8-78d688951cc6" Value="0,0,0" Type="Color" />
+  <Parameter Name="SwapUV" Guid="fa5ba173-08c4-4997-b6f5-caba7bc736a6" Value="True" Type="bool" />
+  <Parameter Name="DisplayName" Guid="6cd2ac98-1e7b-4e82-8b7c-1020ce6e98a8" Value="Father Bear" Type="string" />
+  <Parameter Name="TextureSlot" Guid="bd425347-15d4-47e9-8d28-1585dcc95c2f" Value="163" Type="int" />
+  <Parameter Name="EggTypeIndex" Guid="3bc49419-a523-4de2-bfcc-dde6548b35a6" Value="51" Type="int" />
+</ParameterSet>
     
       </Folder>
     </Folder>
