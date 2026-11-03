@@ -59,7 +59,7 @@
 <Parameter Name="JumpSpeed" Guid="2bafcbc4-1e51-441c-8f5a-892be9a449fd" Value="5" Type="float" />
 </MemberComponentTemplate>
 
-<MemberComponentTemplate Name="Miner" Guid="586aaabd-81e7-4166-95fd-e5e7818363fb InheritanceParent="8acca888-ba39-464f-bcf5-6ae15e448c62">
+<MemberComponentTemplate Name="Miner" Guid="586aaabd-81e7-4166-95fd-e5e7818363fb InheritanceParent="bacca888-ba39-464f-bcf5-6ae15e448c62">
   <Parameter Name="AttackPower" Guid="6bfe2045-e2ae-4a23-a4ea-49bb65cdadf7" Value="15" Type="float" />
 </MemberComponentTemplate>
 
