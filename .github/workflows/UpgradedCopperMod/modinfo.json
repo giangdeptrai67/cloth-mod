@@ -1,7 +1,7 @@
 {
   "$schema": "https://gitee.com/SC-SPM/SurvivalcraftApi/raw/SCAPI1.9/Survivalcraft/Content/modinfo-scheme.json",
   "Name": "Giang's expansion pack",
-  "Version": "1.2.5",
+  "Version": "Beta0.2.3",
   "ApiVersion": "1.9.3",
   "Description": "first ever mod, add more content to the game ",
   "ScVersion": "2.4.0.0",
