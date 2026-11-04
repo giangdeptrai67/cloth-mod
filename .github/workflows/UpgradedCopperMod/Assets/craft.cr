@@ -156,7 +156,7 @@
 <Recipe Result="UpgradedIronIngotBlock" ResultCount="9" RequiredHeatLevel="0" a="blockofupgradediron" Description="Upgraded iron is better than iron">
     "a"
  </Recipe>
-<Recipe Result="BearCallWhistleBlock" ResultCount="1" RequiredHeatLevel="5" a="bearhead" b="whistle" Description="make this if you think you are ready">
-    "a"
+<Recipe Result="BearCallWhistleBlock" ResultCount="1" RequiredHeatLevel="0" a="bearhead" b="whistle" Description="make this if you think you are ready">
+    "ab"
  </Recipe>
 </Mod>
