@@ -43,6 +43,9 @@
   <Parameter Name="EggTypeIndex" Guid="a6ead80a-c8b9-471a-944a-7c59f4a6b79f" Value="50" Type="int" />
 </ParameterSet>
         </EntityTemplate>
+
+//-------------------------
+
 <EntityTemplate Name="IsMeWassap" Guid="bd14626c-c831-4cbc-bbdc-5e24d9a84bfa" InheritanceParent="e4275171-a39f-413f-8888-4c472868364d">
 
 <MemberComponentTemplate Name="Creature" Guid="858b41c8-d822-4e45-97ab-6cbfabfe0585">
