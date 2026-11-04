@@ -12,29 +12,44 @@
 <MemberComponentTemplate Name="RunAwayBehavior" Guid="472b01ee-76b7-4ff4-94c9-3c07eb828e1d">
   <Parameter Name="Class" Guid="84ed7bb1-d1a1-417d-b84d-5052565987ed" Value="Game.ComponentNoRunAway" Type="string" />
 </MemberComponentTemplate>
+
           <MemberComponentTemplate Name="Miner" Guid="0e0a219b-cc8e-4c71-91b4-d3ac800c4cfa">
             <Parameter Name="AttackPower" Guid="f942d6a6-e7b6-491b-ad6d-ab2cb4bd2330" Value="30" Type="float" />
           </MemberComponentTemplate>
+
           <MemberComponentTemplate Name="Body" Guid="7cd0854a-ed0d-485d-9d25-07bd6b06f204">
             <Parameter Name="BoxSize" Guid="f2cc3b38-0677-48b9-9b25-f15466403de1" Value="1.8,2.4,1.8" Type="Vector3" />
             <Parameter Name="Mass" Guid="b372238a-c960-405d-b545-17ab39e045d1" Value="800" Type="float" />
 <Parameter Name="MaxSmoothRiseHeight" Guid="c7913606-0339-4880-a3e3-0dee49ff1c23" Value="1.1" Type="float" />
           </MemberComponentTemplate>
+
           <MemberComponentTemplate Name="Locomotion" Guid="ea9057cf-a789-4a7e-9a17-987fb5cf1e38">
             <Parameter Name="WalkSpeed" Guid="c681283e-7b00-40d4-936e-59c37fd8c942" Value="9" Type="float" />
 <Parameter Name="JumpSpeed" Guid="4720ebab-e795-4660-940b-7ba07a723ca4" Value="6" Type="float" />
           </MemberComponentTemplate>
+
           <MemberComponentTemplate Name="Spawn" Guid="14ac9c65-4ad3-45f7-93aa-06605ccf829e">
             <Parameter Name="AutoDespawn" Guid="dda9c32f-9dea-42b7-9bff-e718c872bc8a" Value="False" Type="bool" />
           </MemberComponentTemplate>
+
           <MemberComponentTemplate Name="Creature" Guid="ab7ef4e8-0ec5-4ca7-96d8-eff3a7f6df2d">
             <Parameter Name="DisplayName" Guid="5cb63d26-268e-4c16-84dd-c011a97e3164" Value="Father Bear" Type="string" />
             <Parameter Name="Description" Guid="0b028993-8c85-404e-b55c-62bf2643bc85" Value="A huge, enraged bear that answers the call of its cub." Type="string" />
           </MemberComponentTemplate>
+
+<MemberComponentTemplate Name="ChaseBehavior" Guid="f0114a55-6c08-41b7-926a-d1e18d1dcb90">
+  <Parameter Name="ChaseNonPlayerProbability" Guid="dc0cc991-7a6f-4559-90a3-3b5e8d438170" Value="0.85" Type="float" />
+<Parameter Name="DayChaseRange" Guid="eba8d9cb-5cac-4579-af35-c46d8510294e" Value="30" Type="float" />
+<Parameter Name="NightChaseRange" Guid="a19ab40d-c54e-4881-ac70-3b89ec7b7f6d" Value="30" Type="float" />
+</MemberComponentTemplate>
+
+<MemberComponentTemplate Name="FindPlayerBehavior" Guid="a06793ec-748e-4c3a-a689-2370eab57301" />
+
           <MemberComponentTemplate Name="FourLeggedModel" Guid="cdf70601-774f-41ae-ad20-ee36383f055f">
   <Parameter Name="TextureOverride" Guid="fa897e09-f327-440c-8959-bbf89bc446f3" Value="Textures/Creature/fatherbear" Type="string" />
   <Parameter Name="ModelName" Guid="47324c08-1fba-49d7-8123-e48843b7495a" Value="Models/FatherBear" Type="string" />
 </MemberComponentTemplate>
+
 <ParameterSet Name="CreatureEggData" Guid="00682ce8-87c0-4728-801d-d13d8e555871">
   <Parameter Name="Color" Guid="ace073f9-9225-4884-a5e4-c8ed5925c816" Value="120,20,20" Type="Color" />
   <Parameter Name="SwapUV" Guid="c924548d-aa39-4a6c-98e5-c728973c435b" Value="True" Type="bool" />
