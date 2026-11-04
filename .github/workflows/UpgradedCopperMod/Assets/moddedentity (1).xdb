@@ -43,7 +43,7 @@
 <Parameter Name="NightChaseRange" Guid="a19ab40d-c54e-4881-ac70-3b89ec7b7f6d" Value="30" Type="float" />
 </MemberComponentTemplate>
 
-<MemberComponentTemplate Name="FindPlayerBehavior" Guid="a06793ec-748e-4c3a-a689-2370eab57301" />
+<MemberComponentTemplate Name="FindPlayerBehavior" Guid="68e9f63a-f098-43bb-b95e-bf9fb8ec8177" />
 
           <MemberComponentTemplate Name="FourLeggedModel" Guid="cdf70601-774f-41ae-ad20-ee36383f055f">
   <Parameter Name="TextureOverride" Guid="fa897e09-f327-440c-8959-bbf89bc446f3" Value="Textures/Creature/fatherbear" Type="string" />
