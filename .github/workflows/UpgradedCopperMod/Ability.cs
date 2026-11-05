@@ -62,4 +62,31 @@ namespace Game
             }
         }
     }
+public class ComponentBearSummon : Component, IUpdateable
+{
+    SubsystemCreatureSpawn m_spawn;
+    ComponentCreature m_creature;
+    ComponentChaseBehavior m_chase;
+    float m_timer;
+    public int UpdateOrder => 0;
+
+    public override void Load(ValuesDictionary vd, IdToEntityMap map)
+    {
+        base.Load(vd, map);
+        m_spawn = Project.FindSubsystem<SubsystemCreatureSpawn>(true);
+        m_creature = Entity.FindComponent<ComponentCreature>(true);
+        m_chase = Entity.FindComponent<ComponentChaseBehavior>(true);
+    }
+
+    public void Update(float dt)
+    {
+        m_timer += dt;
+        if (m_chase.Target != null && m_timer > 20f)
+        {
+            m_timer = 0f;
+            // TODO: pick 2 positions near m_creature.ComponentBody.Position
+            // TODO: m_spawn.SpawnCreature("BearCub", position, false);
+        }
+    }
+}
 }
