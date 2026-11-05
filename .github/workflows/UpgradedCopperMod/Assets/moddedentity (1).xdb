@@ -2,6 +2,7 @@
   <Folder Name="Entities" Guid="5fcdf35f-7001-442c-883e-e0502b15d291">
     <Folder Name="Creatures" Guid="beb2de3c-1a77-4950-b74f-9dd470f751fe">
       <Folder Name="Abstract" Guid="662d69f8-483c-4271-966b-da9cbb4f5042">
+
         <EntityTemplate Name="FatherBear" Guid="537682fb-bfc0-4748-b01d-b61ad959aa83" InheritanceParent="437e6af3-ea9f-4f3c-8b96-d81de6223831">
           <MemberComponentTemplate Name="Health" Guid="1d745775-0ee3-4a1e-b0db-4f3357a4c9b0">
 
@@ -27,7 +28,7 @@
           </MemberComponentTemplate>
 
           <MemberComponentTemplate Name="Locomotion" Guid="ea9057cf-a789-4a7e-9a17-987fb5cf1e38">
-            <Parameter Name="WalkSpeed" Guid="c681283e-7b00-40d4-936e-59c37fd8c942" Value="9" Type="float" />
+            <Parameter Name="WalkSpeed" Guid="c681283e-7b00-40d4-936e-59c37fd8c942" Value="6" Type="float" />
 <Parameter Name="JumpSpeed" Guid="4720ebab-e795-4660-940b-7ba07a723ca4" Value="6" Type="float" />
           </MemberComponentTemplate>
 
@@ -107,6 +108,30 @@
   <Parameter Name="TextureSlot" Guid="bd425347-15d4-47e9-8d28-1585dcc95c2f" Value="163" Type="int" />
   <Parameter Name="EggTypeIndex" Guid="3bc49419-a523-4de2-bfcc-dde6548b35a6" Value="51" Type="int" />
 </ParameterSet>
+
+
+        <EntityTemplate Name="BearCub" Guid="1bf06e88-6a94-4c5d-90b9-b2dc609f5c2f" InheritanceParent="437e6af3-ea9f-4f3c-8b96-d81de6223831">
+<MemberComponentTemplate Name="Health" Guid="bc0ee63c-01eb-4427-847c-0938210976b6">
+  <Parameter Name="AttackResilience" Guid="8586df2d-eb6a-4242-bebe-0e2cff265c90" Value="15" Type="float" />
+</MemberComponentTemplate>
+
+<MemberComponentTemplate Name="Locomotion" Guid="a65a5b61-7712-46a1-b905-d80ea911e0c9">
+  <Parameter Name="WalkSpeed" Guid="77c73fe3-d23d-4e80-9933-e8ea5750a65a" Value="6.5" Type="float" />
+</MemberComponentTemplate>
+
+<MemberComponentTemplate Name="Miner" Guid="27198b3e-2a02-4f40-9bb2-7531f1e8dc6d">
+  <Parameter Name="AttackPower" Guid="0f55afd3-b6be-4833-8bf3-4785b3c4ae48" Value="2.5" Type="float" />
+</MemberComponentTemplate>
+
+<MemberComponentTemplate Name="FourLeggedModel" Guid="">
+  <Parameter Name="ModelName" Guid="87d60070-dd4e-4ae1-8ab3-07aa03e745d3" Value="Models/BearCub" Type="string" />
+<Parameter Name="TextureOverride" Guid="30c0fab3-a4a2-41fe-b7fa-3621125274a3" Value="Textures/Creature/fatherbear" Type="string" />
+</MemberComponentTemplate>
+
+<MemberComponentTemplate Name="Body" Guid="87d60070-dd4e-4ae1-8ab3-07aa03e745d3">
+  <Parameter Name="BoxSize" Guid="1972bfae-28ac-4771-8191-f969b043b83d" Value="0.45,0.6,0.45" Type="Vector3" />
+<Parameter Name="Mass" Guid="4eae209c-4f65-485c-bcad-223fc3844512" Value="50" Type="float" />
+</MemberComponentTemplate>
 
     </EntityTemplate>
       </Folder>
