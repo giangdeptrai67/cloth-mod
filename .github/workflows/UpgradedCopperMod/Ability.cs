@@ -84,8 +84,9 @@ public class ComponentBearSummon : Component, IUpdateable
         if (m_chase.Target != null && m_timer > 20f)
         {
             m_timer = 0f;
-            // TODO: pick 2 positions near m_creature.ComponentBody.Position
-            // TODO: m_spawn.SpawnCreature("BearCub", position, false);
+            Vector3 pos = m_creature.ComponentBody.Position;
+m_spawn.SpawnCreature("BearCub", pos + new Vector3(2f, 0f, 0f), false);
+m_spawn.SpawnCreature("BearCub", pos + new Vector3(-2f, 0f, 0f), false);
         }
     }
 }
