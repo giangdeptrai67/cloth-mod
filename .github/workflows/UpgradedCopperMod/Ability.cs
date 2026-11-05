@@ -85,12 +85,9 @@ public class ComponentBearSummon : Component, IUpdateable
         {
             m_timer = 0f;
             Vector3 pos = m_creature.ComponentBody.Position;
-m_spawn.SpawnCreature("BearCub", pos + new Vector3(2f, 0f, 0f), false);
-m_spawn.SpawnCreature("BearCub", pos + new Vector3(-2f, 0f, 0f), false);
-Vector3 pos = m_creature.ComponentBody.Position;
-for (int i = 0; i < 2; i++)
 {
-    float x = (i == 0) ? 2f : -2f;
+    float x = (i - 1) * 2f;
+    float y = (i ==0 ) ? 1f : 0f;
     Entity cub = m_spawn.SpawnCreature("BearCub", pos + new Vector3(x, 0f, 0f), false);
     if (cub != null)
     {
