@@ -5,7 +5,7 @@
         <Parameter Name="Class" Guid="f3723578-3bd1-485c-8431-8cc44afb7c5c" Value="Game.ComponentBossDigger" Type="string" />
       </ComponentTemplate>
 
-<ComponentTemplate Name="BearSummon" Guid="e74dad02-54c5-4be5-ae5e-d6bcb4b78a4b">
+<ComponentTemplate Name="BearSummon" Guid="e74dad02-54c5-4be5-ae5e-d6bcb4b78a4b" InheritanceParent="b05700ed-7e4e-4679-98f5-b597f421496b">
   <Parameter Name="Class" Guid="630ba0e8-26b2-4aa1-9289-b966f1339741" Value="Game.ComponentBearSummon" Type="string" />
 </ComponentTemplate>
     </Folder>
