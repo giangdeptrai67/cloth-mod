@@ -125,7 +125,7 @@
   <Parameter Name="AttackPower" Guid="0f55afd3-b6be-4833-8bf3-4785b3c4ae48" Value="2.5" Type="float" />
 </MemberComponentTemplate>
 
-<MemberComponentTemplate Name="FourLeggedModel" Guid="">
+<MemberComponentTemplate Name="FourLeggedModel" Guid="980aac11-61eb-47cd-af5f-9c23eae3b5bf">
   <Parameter Name="ModelName" Guid="9c81c5b6-3b67-49ee-bad8-234bd70d43ae" Value="Models/BearCub" Type="string" />
 <Parameter Name="TextureOverride" Guid="30c0fab3-a4a2-41fe-b7fa-3621125274a3" Value="Textures/Creature/fatherbear" Type="string" />
 </MemberComponentTemplate>
