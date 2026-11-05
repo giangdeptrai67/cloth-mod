@@ -123,6 +123,10 @@
     "BearCallWhistleBlock:0": {
       "DisplayName": "Bear calling whistle",
       "Description": "A bear head with a whistle attached inside"
+},
+    "SoulOfTheForestBlock:0": {
+      "DisplayName": "Soul of the forest",
+      "Description": "soul of the forest, nobody knows where it came from, nobody knows what it made of, obtain by killing a Father Bear"
 }
 }
 }
