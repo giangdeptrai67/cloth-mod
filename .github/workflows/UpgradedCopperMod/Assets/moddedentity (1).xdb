@@ -58,7 +58,10 @@
   <Parameter Name="Loot" Guid="">
     <Parameter Name="1" Guid="" Value="DiamondBlock;5;20" Type="string" />
 <Parameter Name="2" Guid="" Value="IronIngotBlock;20;50" Type="string" />
-<Parameter Name="3" Guid="" Value="" Type="string" />
+<Parameter Name="3" Guid="" Value="CopperIngotBlock;30;50" Type="string" />
+<Parameter Name="4" Guid="" Value="SoulOfTheForestBlock" Type="string" />
+</PrameterSet>
+
 
 
 
