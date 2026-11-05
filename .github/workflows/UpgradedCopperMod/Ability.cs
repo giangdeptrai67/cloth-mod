@@ -87,7 +87,22 @@ public class ComponentBearSummon : Component, IUpdateable
             Vector3 pos = m_creature.ComponentBody.Position;
 m_spawn.SpawnCreature("BearCub", pos + new Vector3(2f, 0f, 0f), false);
 m_spawn.SpawnCreature("BearCub", pos + new Vector3(-2f, 0f, 0f), false);
+Vector3 pos = m_creature.ComponentBody.Position;
+for (int i = 0; i < 2; i++)
+{
+    float x = (i == 0) ? 2f : -2f;
+    Entity cub = m_spawn.SpawnCreature("BearCub", pos + new Vector3(x, 0f, 0f), false);
+    if (cub != null)
+    {
+        ComponentChaseBehavior cubChase = cub.FindComponent<ComponentChaseBehavior>();
+        if (cubChase != null)
+        {
+            cubChase.Attack(m_chase.Target, 30f, 60f, true);
         }
     }
+}
+        }
+    }
+    
 }
 }
