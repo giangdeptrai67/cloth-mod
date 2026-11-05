@@ -7,8 +7,8 @@ namespace Game
     {
 
         private Texture2D[] m_frames;
-        private const int FrameCount = 4;
-        private const double Fps = 8.0;
+        private const int FrameCount = 6;
+        private const double Fps = 5.0;
 
         public override void Initialize()
         {
