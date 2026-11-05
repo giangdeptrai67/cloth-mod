@@ -17,7 +17,7 @@ namespace Game
             for (int i = 0; i < FrameCount; i++)
             {
                 // files: Textures/soulforest1 ... soulforest4
-                m_frames[i] = ContentManager.Get<Texture2D>("Textures/soulforest" + (i + 1));
+                m_frames[i] = ContentManager.Get<Texture2D>("Textures/Animated/soulforest" + (i + 1));
             }
         }
 
