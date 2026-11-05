@@ -85,6 +85,7 @@ public class ComponentBearSummon : Component, IUpdateable
         {
             m_timer = 0f;
             Vector3 pos = m_creature.ComponentBody.Position;
+            for (int i = 0; i < 3; i++)
 {
     float x = (i - 1) * 2f;
     float y = (i ==0 ) ? 1f : 0f;
