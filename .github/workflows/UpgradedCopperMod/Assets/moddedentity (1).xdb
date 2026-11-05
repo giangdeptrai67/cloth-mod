@@ -126,7 +126,7 @@
 </MemberComponentTemplate>
 
 <MemberComponentTemplate Name="FourLeggedModel" Guid="">
-  <Parameter Name="ModelName" Guid="87d60070-dd4e-4ae1-8ab3-07aa03e745d3" Value="Models/BearCub" Type="string" />
+  <Parameter Name="ModelName" Guid="9c81c5b6-3b67-49ee-bad8-234bd70d43ae" Value="Models/BearCub" Type="string" />
 <Parameter Name="TextureOverride" Guid="30c0fab3-a4a2-41fe-b7fa-3621125274a3" Value="Textures/Creature/fatherbear" Type="string" />
 </MemberComponentTemplate>
 
