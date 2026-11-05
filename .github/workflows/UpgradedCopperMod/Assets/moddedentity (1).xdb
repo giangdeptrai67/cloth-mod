@@ -4,6 +4,7 @@
       <Folder Name="Abstract" Guid="662d69f8-483c-4271-966b-da9cbb4f5042">
         <EntityTemplate Name="FatherBear" Guid="537682fb-bfc0-4748-b01d-b61ad959aa83" InheritanceParent="437e6af3-ea9f-4f3c-8b96-d81de6223831">
           <MemberComponentTemplate Name="Health" Guid="1d745775-0ee3-4a1e-b0db-4f3357a4c9b0">
+
             <Parameter Name="AttackResilience" Guid="7d690968-5232-4da1-8a37-f2c9d1001d9c" Value="620" Type="float" />
           <Parameter Name="FallResilience" Guid="93d8076c-71d0-494e-81e5-12ded7351b0c" Value="20" Type="float" />
           
@@ -43,7 +44,7 @@
 <Parameter Name="NightChaseRange" Guid="a19ab40d-c54e-4881-ac70-3b89ec7b7f6d" Value="30" Type="float" />
 </MemberComponentTemplate>
 
-<MemberComponentTemplate Name="FindPlayerBehavior" Guid="68e9f63a-f098-43bb-b95e-bf9fb8ec8177" />
+<MemberComponentTemplate Name="FindPlayerBehavior" Guid="68e9f63a-f098-43bb-b95e-bf9fb8ec8177" InheritanceParent="44c9a961-258c-4eb3-81d1-d3ae249ae031" />
 
           <MemberComponentTemplate Name="FourLeggedModel" Guid="cdf70601-774f-41ae-ad20-ee36383f055f">
   <Parameter Name="TextureOverride" Guid="fa897e09-f327-440c-8959-bbf89bc446f3" Value="Textures/Creature/fatherbear" Type="string" />
