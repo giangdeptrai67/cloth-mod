@@ -54,6 +54,16 @@
   <Parameter Name="ModelName" Guid="47324c08-1fba-49d7-8123-e48843b7495a" Value="Models/FatherBear" Type="string" />
 </MemberComponentTemplate>
 
+<MemberComponentTemplate Name="Loot" Guid="">
+  <Parameter Name="Loot" Guid="">
+    <Parameter Name="1" Guid="" Value="DiamondBlock;5;20" Type="string" />
+<Parameter Name="2" Guid="" Value="IronIngotBlock;20;50" Type="string" />
+<Parameter Name="3" Guid="" Value="" Type="string" />
+
+
+
+</MemberComponentTemplate>
+
 <ParameterSet Name="CreatureEggData" Guid="00682ce8-87c0-4728-801d-d13d8e555871">
   <Parameter Name="Color" Guid="ace073f9-9225-4884-a5e4-c8ed5925c816" Value="120,20,20" Type="Color" />
   <Parameter Name="SwapUV" Guid="c924548d-aa39-4a6c-98e5-c728973c435b" Value="True" Type="bool" />
