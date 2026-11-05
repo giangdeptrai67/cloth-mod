@@ -55,7 +55,7 @@
 </MemberComponentTemplate>
 
 <MemberComponentTemplate Name="Loot" Guid="ef7f7b38-dc2c-4d99-abcc-12bc0178734a">
-  <Parameter Name="Loot" Guid="06fe1211-4d1c-405e-bdd2-e89004d5b1ec">
+  <ParameterSet Name="Loot" Guid="06fe1211-4d1c-405e-bdd2-e89004d5b1ec">
     <Parameter Name="1" Guid="2bd3d365-cc45-442b-927c-c7a002471c42" Value="DiamondBlock;5;20" Type="string" />
 <Parameter Name="2" Guid="9a38c13f-005d-40f7-acf7-f68bbc969972" Value="IronIngotBlock;20;50" Type="string" />
 <Parameter Name="3" Guid="9d8a1684-6f0f-4db8-a141-19964b544679" Value="CopperIngotBlock;30;50" Type="string" />
