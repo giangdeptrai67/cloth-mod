@@ -109,6 +109,8 @@
   <Parameter Name="EggTypeIndex" Guid="3bc49419-a523-4de2-bfcc-dde6548b35a6" Value="51" Type="int" />
 </ParameterSet>
 
+</EntityTemplate>
+
 
         <EntityTemplate Name="BearCub" Guid="1bf06e88-6a94-4c5d-90b9-b2dc609f5c2f" InheritanceParent="437e6af3-ea9f-4f3c-8b96-d81de6223831">
 <MemberComponentTemplate Name="Health" Guid="bc0ee63c-01eb-4427-847c-0938210976b6">
