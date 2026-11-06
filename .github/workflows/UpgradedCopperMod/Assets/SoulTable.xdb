@@ -1,0 +1,9 @@
+<Database xmlns="runtime-namespace:Game">
+  <EntityTemplate Name="SoulTable" Guid="6955d8d9-7cbc-473d-9773-1387c748f566">
+    <MemberComponentTemplate Name="BlockEntity" Guid="a1e40beb-68da-4878-9d62-7c656a0f7ed1" InheritanceParent="BlockEntity"/>
+    <MemberComponentTemplate Name="SoulTable" Guid="99c802c1-b776-4629-9223-3fc9b64d0bfb" Class="Game.ComponentSoulTable">
+      <MemberParameter Name="SlotsCount" Type="int" Value="11"/>
+    </MemberComponentTemplate>
+  </EntityTemplate>
+  <SubsystemTemplate Name="SoulTableBlockBehavior" Guid="29faca7f-e453-46c1-8318-36811f09d4ac" Class="Game.SubsystemSoulTableBlockBehavior"/>
+</Database>
